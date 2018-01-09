@@ -1,0 +1,3562 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <img style="float:left;display:none;" id="i" src="" />
+    <canvas style="padding-left:10px;float:left" id="c" width="450" height="601"></canvas>
+    <ul>
+
+    </ul>
+</body>
+
+</html>
+<script>
+
+    var data1 =[
+      {
+        "subject": "FIBRE OPTIC INSTRUMENTATION",
+        "branch": "INSTRU",
+        "semester": 8,
+        "objectId": "3D06C8E0-975F-2E01-FFB2-5CAAF82ECB00"
+      },
+
+      {
+        "subject": "NANO TECHNOLOGY",
+        "branch": "INSTRU",
+        "semester": 8,
+        "objectId": "AB622077-92AB-78A5-FF81-98A0A5908600"
+      },
+
+      {
+        "subject": "OPTICAL CONTRL THEORY",
+        "branch": "INSTRU",
+        "semester": 8,
+        "objectId": "15C7102F-401B-F1D3-FFCC-4F170E346600"
+      },
+
+      {
+        "subject": "POWER PLANT INSTRUMENTATION",
+        "branch": "INSTRU",
+        "semester": 8,
+        "objectId": "F5F37F19-5C1E-709D-FFA4-7CDF554DFF00"
+      },
+
+      {
+        "subject": "NUCLEAR INSTRUMENTATION",
+        "branch": "INSTRU",
+        "semester": 8,
+        "objectId": "DE593983-E2B9-453A-FF52-FF7760668D00"
+      },
+
+      {
+        "subject": "INSTRUMENT & SYSTEM DESIGN",
+        "branch": "INSTRU",
+        "semester": 8,
+        "objectId": "6816EDDF-8717-4EF4-FF9B-77C29231E800"
+      },
+
+      {
+        "subject": "INSTRUMENTATION PROJECT DOCUMENTATION & EXECUTION",
+        "branch": "INSTRU",
+        "semester": 8,
+        "objectId": "DBAE8383-BA59-6586-FF71-9D15F0AFC900"
+      },
+
+      {
+        "subject": "BATCH PROCESS AUTOMATION",
+        "branch": "INSTRU",
+        "semester": 8,
+        "objectId": "C1B3EDB9-5B33-F4D0-FF02-ABA5DC426500"
+      },
+
+      {
+        "subject": "PROCESS MODELLING AND OPTIMIZATION",
+        "branch": "INSTRU",
+        "semester": 7,
+        "objectId": "5A460774-4CA4-2FD3-FF3F-7D6441DF2200"
+      },
+
+      {
+        "subject": "WIRELESS COMMUNICATIOM",
+        "branch": "INSTRU",
+        "semester": 7,
+        "objectId": "5A9493A3-00ED-06D0-FF4E-F1F3E4ABF900"
+      },
+
+      {
+        "subject": "FUNCTIONAL SAFETY",
+        "branch": "INSTRU",
+        "semester": 7,
+        "objectId": "B57988C2-7404-D5D6-FFAB-31A368406200"
+      },
+
+      {
+        "subject": "ADVANCED EMBEDDED SYSTEMS",
+        "branch": "INSTRU",
+        "semester": 7,
+        "objectId": "BCD1C0F1-FCB6-1613-FF55-639445C1C300"
+      },
+
+      {
+        "subject": "IMAGE PROCESSING",
+        "branch": "INSTRU",
+        "semester": 7,
+        "objectId": "A0B60EFE-4674-9BAF-FFC4-EC8A4A34D900"
+      },
+
+      {
+        "subject": "PROCESS AUTOMATION",
+        "branch": "INSTRU",
+        "semester": 7,
+        "objectId": "AB72B29C-8221-470D-FF01-F01F2AC85F00"
+      },
+
+      {
+        "subject": "ADVANCED CONTROL SYSTEMS",
+        "branch": "INSTRU",
+        "semester": 7,
+        "objectId": "ED2DFA68-4C9F-2925-FFC9-3A1408C1B400"
+      },
+
+      {
+        "subject": "INDUSTRIAL PROCESS CONTROL",
+        "branch": "INSTRU",
+        "semester": 7,
+        "objectId": "64D130E0-8999-8A1A-FF60-15D224845D00"
+      },
+
+      {
+        "subject": "BIOMEDICAL INSTRUMENTATION",
+        "branch": "INSTRU",
+        "semester": 7,
+        "objectId": "7C6EE404-8469-D80C-FFA1-95C552DA5000"
+      },
+
+      {
+        "subject": "INDUSTRIAL DATA COMMUNICATION",
+        "branch": "INSTRU",
+        "semester": 6,
+        "objectId": "2F62EF7A-ADC3-42E5-FF5F-19750577C700"
+      },
+
+      {
+        "subject": "ANALYTICAL INSTRUMENTATION",
+        "branch": "INSTRU",
+        "semester": 6,
+        "objectId": "C3A4A133-E41E-62DA-FF96-6C5DBFE52000"
+      },
+
+      {
+        "subject": "DIGITAL SIGNAL PROCESSING",
+        "branch": "INSTRU",
+        "semester": 6,
+        "objectId": "3E46EF16-4E33-D88B-FF14-7AFC232AC600"
+      },
+
+      {
+        "subject": "APPLICATIONS OF MICROCONTROLLER  - II",
+        "branch": "INSTRU",
+        "semester": 6,
+        "objectId": "70866C72-1577-4612-FF40-0221E12C3300"
+      },
+
+      {
+        "subject": "POWER ELECTRONICS AND DRIVES",
+        "branch": "INSTRU",
+        "semester": 6,
+        "objectId": "64875260-29B0-07DC-FFF4-4D8ACEC13500"
+      },
+
+      {
+        "subject": "PROCESS INSTRUMENTATION SYSTEMS",
+        "branch": "INSTRU",
+        "semester": 6,
+        "objectId": "9C02C5ED-FF66-E20E-FF6F-B7C27DE5D400"
+      },
+
+      {
+        "subject": "CONTROL SYSTEM COMPONENTS",
+        "branch": "INSTRU",
+        "semester": 5,
+        "objectId": "41367CF4-77F0-A56F-FF09-0B20DFDA5500"
+      },
+
+      {
+        "subject": "CONTROL SYSTEM DESIGN",
+        "branch": "INSTRU",
+        "semester": 5,
+        "objectId": "384C069A-79AE-F547-FF9D-48E1AA0F6300"
+      },
+
+      {
+        "subject": "SIGNAL CONDITIONING CIRCUIT DESIGN",
+        "branch": "INSTRU",
+        "semester": 5,
+        "objectId": "0C0E3949-C955-27A7-FF95-40FDA5438200"
+      },
+
+      {
+        "subject": "APPLICATIONS OF MICROCONTROLLER  - I",
+        "branch": "INSTRU",
+        "semester": 5,
+        "objectId": "812F8BCB-8A93-B154-FFA7-8D0B26986000"
+      },
+
+      {
+        "subject": "TRANSDUCERS-II",
+        "branch": "INSTRU",
+        "semester": 4,
+        "objectId": "6E79ABF9-85CC-56D9-FF8D-DC824B974300"
+      },
+
+      {
+        "subject": "SIGNALS AND SYSTEMS",
+        "branch": "INSTRU",
+        "semester": 5,
+        "objectId": "735FEFD5-F47F-1510-FF9F-F53805D0C700"
+      },
+
+      {
+        "subject": "ELECTRICAL TECHNOLOGY AND INSTRUMENTS",
+        "branch": "INSTRU",
+        "semester": 4,
+        "objectId": "7CA721F8-D3CA-F639-FFD9-47DCDA1F9200"
+      },
+
+      {
+        "subject": "COMMUNICATION SYSTEM",
+        "branch": "INSTRU",
+        "semester": 4,
+        "objectId": "9671F029-EC56-91B5-FF57-97C402484400"
+      },
+
+      {
+        "subject": "APPLIED MATHEMATICS IV",
+        "branch": "INSTRU",
+        "semester": 4,
+        "objectId": "0790A345-A7E1-AF50-FF13-C7670E649000"
+      },
+
+      {
+        "subject": "FEEDBACK CONTROL SYSTEM",
+        "branch": "INSTRU",
+        "semester": 4,
+        "objectId": "0F2D0F55-F47F-182F-FF9E-CB436F8E4000"
+      },
+
+      {
+        "subject": "TRANSDUCERS-I",
+        "branch": "INSTRU",
+        "semester": 3,
+        "objectId": "8F411C11-48F6-2059-FF9C-2CE78E120700"
+      },
+
+      {
+        "subject": "DIGITAL ELECTRONICS",
+        "branch": "INSTRU",
+        "semester": 3,
+        "objectId": "0C5D377E-B0DF-FBFB-FF73-ED55FDEE6F00"
+      },
+
+      {
+        "subject": "ANALOG ELECTRONICS",
+        "branch": "INSTRU",
+        "semester": 3,
+        "objectId": "85B07EE2-53A6-DA9A-FF6D-774BE0144000"
+      },
+
+      {
+        "subject": "APPLIED MATHEMATICS III",
+        "branch": "INSTRU",
+        "semester": 3,
+        "objectId": "FAE9BDD9-91D0-915B-FFF8-89916BEF8300"
+      },
+
+      {
+        "subject": "ELECTRICAL NETWORK ANALYSIS AND SYNTHESIS",
+        "branch": "INSTRU",
+        "semester": 3,
+        "objectId": "D6F67880-C5DC-EFC6-FF9C-D0FD9B01EC00"
+      },
+
+      {
+        "subject": "ENTREPRENEURSHIP DEVELOPMENT",
+        "branch": "ELEC",
+        "semester": 8,
+        "objectId": "03B9B417-716A-2015-FFC1-A8A507B96900"
+      },
+
+      {
+        "subject": "NON LINEAR CONTROL SYSTEM",
+        "branch": "ELEC",
+        "semester": 8,
+        "objectId": "18D05673-7C54-1A8D-FFA8-D38D1ECA6100"
+      },
+
+      {
+        "subject": "POWER SYSTEM DYNAMICS AND CONTROL",
+        "branch": "ELEC",
+        "semester": 8,
+        "objectId": "11F39FD0-E17E-8602-FF12-FB10D7ABB100"
+      },
+
+      {
+        "subject": "SMART GRID TECHNOLOGY",
+        "branch": "ELEC",
+        "semester": 8,
+        "objectId": "6960F5F1-1D78-AD60-FFB2-CB1649DC9F00"
+      },
+
+      {
+        "subject": "ELECTRIC AND HYBRID ELECTRIC VEHICLE TECHNOLOGY",
+        "branch": "ELEC",
+        "semester": 8,
+        "objectId": "7861B9BD-F523-89A8-FF9E-2541E8547100"
+      },
+
+      {
+        "subject": "POWER QUALITY",
+        "branch": "ELEC",
+        "semester": 8,
+        "objectId": "EA520182-9077-204B-FF0B-20188159C800"
+      },
+
+      {
+        "subject": "FLEXIBLE AC TRANSMISSION SYSTEM",
+        "branch": "ELEC",
+        "semester": 8,
+        "objectId": "FBEB3CED-F738-09BE-FFBB-5C1CD8821200"
+      },
+
+      {
+        "subject": "POWER SYSTEM PLANNING AND RELIABILITY",
+        "branch": "ELEC",
+        "semester": 8,
+        "objectId": "5CC21221-542B-9687-FF0D-FFB4A3396000"
+      },
+
+      {
+        "subject": "DRIVES AND CONTROL",
+        "branch": "ELEC",
+        "semester": 8,
+        "objectId": "072A229E-B260-62DD-FF67-A6B688592700"
+      },
+
+      {
+        "subject": "DESIGN MANAGEMENT AND AUDITING OF ELECTRICAL SYSTEM",
+        "branch": "ELEC",
+        "semester": 8,
+        "objectId": "41FD52D2-20CD-C0A5-FF55-089F55521000"
+      },
+
+      {
+        "subject": "OPTIMIZATION TECHNIQUES AND ITS APPLICATION",
+        "branch": "ELEC",
+        "semester": 7,
+        "objectId": "689F7797-785A-4EB9-FF73-63A2B9AD8B00"
+      },
+
+      {
+        "subject": "RENEWABLE ENERGY AND ENERGY STORAGE SYSTEMS",
+        "branch": "ELEC",
+        "semester": 7,
+        "objectId": "432F2AF3-8F6E-F5FC-FFA5-A4C40A1C1400"
+      },
+
+      {
+        "subject": "ADVANCED LIGHTNING SYSTEMS",
+        "branch": "ELEC",
+        "semester": 7,
+        "objectId": "F85D2A0F-3EF4-9517-FFBB-AFAE62506A00"
+      },
+
+      {
+        "subject": "DIGITA SIGNAL CONTROLLERS AND ITS APPLICATIONS",
+        "branch": "ELEC",
+        "semester": 7,
+        "objectId": "943F9704-98A9-CF77-FF5A-2489FAD76300"
+      },
+
+      {
+        "subject": "ANALYSIS AND DESIGN OF POWER SWITCHING CONVERTERS",
+        "branch": "ELEC",
+        "semester": 7,
+        "objectId": "AAF1F386-DFC0-F4AA-FF03-AAE4C6B05D00"
+      },
+
+      {
+        "subject": "POWER SYSTEM MODELLING",
+        "branch": "ELEC",
+        "semester": 7,
+        "objectId": "65133884-D439-C74D-FF97-A5C148541F00"
+      },
+
+      {
+        "subject": "HIGH VOLTAGE ENGINEERING",
+        "branch": "ELEC",
+        "semester": 7,
+        "objectId": "65FCE952-2449-6CC6-FFF9-EFA7A36C8F00"
+      },
+
+      {
+        "subject": "CONTROL SYSTEM- II",
+        "branch": "ELEC",
+        "semester": 7,
+        "objectId": "6A135715-DCC5-E91D-FF3F-22C32CB28000"
+      },
+
+      {
+        "subject": "HIGH VOLTAGE DC TRANSMISSION",
+        "branch": "ELEC",
+        "semester": 7,
+        "objectId": "A08C860A-2314-11E8-FF9E-59F5A879F200"
+      },
+
+      {
+        "subject": "ELECTRICAL MACHINE DESIGN",
+        "branch": "ELEC",
+        "semester": 7,
+        "objectId": "CF6246F7-C062-898F-FF59-03506D866900"
+      },
+
+      {
+        "subject": "POWER SYSTEM OPERATION AND CONTROL",
+        "branch": "ELEC",
+        "semester": 7,
+        "objectId": "3F472547-F075-A83B-FF4E-3D9B7D34BB00"
+      },
+
+      {
+        "subject": "PROJECT MANAGEMENT",
+        "branch": "ELEC",
+        "semester": 6,
+        "objectId": "EA6995DC-9CE2-4A8E-FF6E-DA8B28F8E000"
+      },
+
+      {
+        "subject": "MICROCONTROLLER AND ITS APPLICATIONS",
+        "branch": "ELEC",
+        "semester": 6,
+        "objectId": "52B8CAFC-8B03-0A41-FF68-1497DCF60F00"
+      },
+
+      {
+        "subject": "CONTROL SYSTEM  -  I",
+        "branch": "ELEC",
+        "semester": 6,
+        "objectId": "0CDB4FDD-1CDA-6DA9-FF5C-8A43CD88BA00"
+      },
+
+      {
+        "subject": "UTILIZATION OF ELECTRICAL ENERGY",
+        "branch": "ELEC",
+        "semester": 6,
+        "objectId": "A4EA44A9-1E67-FDF2-FF8F-C9ED5653A900"
+      },
+
+      {
+        "subject": "ELECTRICAL MACHINES  -  III",
+        "branch": "ELEC",
+        "semester": 6,
+        "objectId": "6142C762-EF49-43C4-FFA0-DCB633BE7000"
+      },
+
+      {
+        "subject": "POWER SYSTEM ANALYSIS",
+        "branch": "ELEC",
+        "semester": 6,
+        "objectId": "1D628318-E4E6-E942-FF7A-BE35046CF100"
+      },
+
+      {
+        "subject": "COMMUNICATION ENGINEERING",
+        "branch": "ELEC",
+        "semester": 5,
+        "objectId": "B5FFCEB3-3EDE-071C-FF75-F98F0C7C2400"
+      },
+
+      {
+        "subject": "POWER ELECTRONICS",
+        "branch": "ELEC",
+        "semester": 5,
+        "objectId": "656D02FA-F1E9-DE8B-FF93-7BA66320AF00"
+      },
+
+      {
+        "subject": "ELECTROMAGNETIC FIELDS AND WAVES",
+        "branch": "ELEC",
+        "semester": 5,
+        "objectId": "8218C0F5-11F8-9D3A-FF72-5FFC1E608B00"
+      },
+
+      {
+        "subject": "PROTECTION AND SWITCHGEAR ENGINEERING",
+        "branch": "ELEC",
+        "semester": 5,
+        "objectId": "164827F6-2E1F-C3EF-FFB0-4F3129AA8F00"
+      },
+
+      {
+        "subject": "ELECTRICAL MACHINES  -  II",
+        "branch": "ELEC",
+        "semester": 5,
+        "objectId": "8ECC3D5C-12A8-39D9-FFA0-49086C7F1600"
+      },
+
+      {
+        "subject": "ANALOG AND DIGITAL INTEGRATED CIRCUITS",
+        "branch": "ELEC",
+        "semester": 4,
+        "objectId": "F2290208-4D3F-6090-FF79-03360D143F00"
+      },
+
+      {
+        "subject": "NUMERICAL METHODS AND OPTIMIZATION TECHNIQUES",
+        "branch": "ELEC",
+        "semester": 4,
+        "objectId": "FA962A28-8A14-FA02-FF51-E1C37847FF00"
+      },
+
+      {
+        "subject": "SIGNAL PROCESSING",
+        "branch": "ELEC",
+        "semester": 4,
+        "objectId": "D165159A-544E-2A64-FF38-289C5244B400"
+      },
+
+      {
+        "subject": "ELECTRICAL MACHINES  - I",
+        "branch": "ELEC",
+        "semester": 4,
+        "objectId": "24DB8B07-C4B0-C225-FF03-4244010ED900"
+      },
+
+      {
+        "subject": "ELEMENTS OF POWER SYSTEM",
+        "branch": "ELEC",
+        "semester": 4,
+        "objectId": "1303CD57-AF26-2831-FFE6-9625033DD500"
+      },
+
+      {
+        "subject": "OBJECT ORIENTED PROGRAMMING AND METHODOLOGY",
+        "branch": "ELEC",
+        "semester": 3,
+        "objectId": "F00DBEC4-C4ED-D6EF-FFD6-92A857C30700"
+      },
+
+      {
+        "subject": "APPLIED MATHEMATICS IV",
+        "branch": "ELEC",
+        "semester": 4,
+        "objectId": "A7180CBB-39F5-06F3-FF3C-8E5FB1275400"
+      },
+
+      {
+        "subject": "ELECTRICAL AND ELECTRONIC MEASUREMENTS",
+        "branch": "ELEC",
+        "semester": 3,
+        "objectId": "24B84035-25BB-AC5D-FF77-DE892514CD00"
+      },
+
+      {
+        "subject": "ELECTRICAL NETWORKS",
+        "branch": "ELEC",
+        "semester": 3,
+        "objectId": "CAE4706B-6D15-F9BE-FFF1-F69EF07C9400"
+      },
+
+      {
+        "subject": "CONVENTIONAL AND NONCONVENTIONAL POWER GENERATION",
+        "branch": "ELEC",
+        "semester": 3,
+        "objectId": "E15FE99B-2AAB-750A-FF51-ACC822E6AC00"
+      },
+
+      {
+        "subject": "APPLIED MATHEMATICS III",
+        "branch": "ELEC",
+        "semester": 3,
+        "objectId": "D5259720-43AB-C426-FFF1-7DDF78114400"
+      },
+
+      {
+        "subject": "ELECTRONIC DEVICES AND CIRCUITS",
+        "branch": "ELEC",
+        "semester": 3,
+        "objectId": "6C8BE1AE-3C68-7ECF-FF51-F0DBBE8A6400"
+      },
+
+      {
+        "subject": "TRANSPORTATION PLANNING AND ECONOMICS",
+        "branch": "CIVIL",
+        "semester": 8,
+        "objectId": "FCC23F8D-728A-EA2A-FF63-57DE65E03600"
+      },
+
+      {
+        "subject": "ADVANCED REPAIRS AND REHABILITATION OF STRUCTURES",
+        "branch": "CIVIL",
+        "semester": 8,
+        "objectId": "DADC60E4-6568-3211-FF78-BFCF17C41E00"
+      },
+
+      {
+        "subject": "DESIGN OF HYDRAULICS STRUCTURE",
+        "branch": "CIVIL",
+        "semester": 8,
+        "objectId": "BEA95146-6283-529C-FF51-8A36EFA57E00"
+      },
+
+      {
+        "subject": "INDUSTRIAL WASTE TREATMENT",
+        "branch": "CIVIL",
+        "semester": 8,
+        "objectId": "211D67B5-55FE-D264-FF39-4473FA3F1F00"
+      },
+
+      {
+        "subject": "BUIDING SERVICES",
+        "branch": "CIVIL",
+        "semester": 8,
+        "objectId": "735804A5-6FBF-6AE2-FF54-65D51A315600"
+      },
+
+      {
+        "subject": "SOIL DYNAMICS",
+        "branch": "CIVIL",
+        "semester": 8,
+        "objectId": "4BEDFAB4-0BBE-7D50-FF54-80B7C6A5CA00"
+      },
+
+      {
+        "subject": "ADVANCE DESIGN OF STEEL STRUCTURES",
+        "branch": "CIVIL",
+        "semester": 8,
+        "objectId": "CCCED50B-D82B-4596-FFFB-0917C665D200"
+      },
+
+      {
+        "subject": "EARTHQUAKE ENGINEERING",
+        "branch": "CIVIL",
+        "semester": 8,
+        "objectId": "94D2C2F7-29B3-5BFB-FF1D-AD24E3745200"
+      },
+
+      {
+        "subject": "PAVEMENT DESIGN AND CONSTRUCTION",
+        "branch": "CIVIL",
+        "semester": 8,
+        "objectId": "042499B3-33C2-4B22-FF3B-955DFA2E9800"
+      },
+
+      {
+        "subject": "DISASTER MANAGEMENT",
+        "branch": "CIVIL",
+        "semester": 8,
+        "objectId": "96BC18B4-0917-1041-FF7C-94D61987AC00"
+      },
+
+      {
+        "subject": "APPRAISAL AND IMPLEMENTATION OF INFRASTUCTURE PROJECTS",
+        "branch": "CIVIL",
+        "semester": 8,
+        "objectId": "437682F2-FC61-CFCC-FF7A-A44B27409A00"
+      },
+
+      {
+        "subject": "ENVIRONMENTAL IMPACT ASSESSMENT AND AUDIT",
+        "branch": "CIVIL",
+        "semester": 8,
+        "objectId": "8200BE0F-32B6-7C4F-FFB2-D1F9A3A72E00"
+      },
+
+      {
+        "subject": "BRIDGE DESIGN AND ENGINEERING",
+        "branch": "CIVIL",
+        "semester": 8,
+        "objectId": "AA826C68-9C11-4873-FF10-7D0CC5939F00"
+      },
+
+      {
+        "subject": "WATER RESOURCE ENGINEERING AND MANAGEMENT",
+        "branch": "CIVIL",
+        "semester": 8,
+        "objectId": "8F6E4F53-31B9-7564-FF43-15F9756DFE00"
+      },
+
+      {
+        "subject": "GEOGRAPHICAL INFORMATION SYSTEM",
+        "branch": "CIVIL",
+        "semester": 8,
+        "objectId": "E17523CB-7798-5C17-FF21-E000F151A200"
+      },
+
+      {
+        "subject": "ROCK MECHANICS",
+        "branch": "CIVIL",
+        "semester": 8,
+        "objectId": "B6004161-7565-C46A-FF04-9E2113F83800"
+      },
+
+      {
+        "subject": "ADVANCED CONSTRUCTION ENGINEERING",
+        "branch": "CIVIL",
+        "semester": 8,
+        "objectId": "07ECFE96-4898-88DD-FF8A-6F273DB97800"
+      },
+
+      {
+        "subject": "CONSTRUCTION MANAGEMENT",
+        "branch": "CIVIL",
+        "semester": 8,
+        "objectId": "046FBB1E-987F-E56C-FFA3-CDCF90B9E200"
+      },
+
+      {
+        "subject": "CONSTRUCTION ENGINEERING",
+        "branch": "CIVIL",
+        "semester": 8,
+        "objectId": "315E9D81-F41E-0B18-FF41-27CF5A721A00"
+      },
+
+      {
+        "subject": "TRAFFIC ENGINEERING AND CONTROL",
+        "branch": "CIVIL",
+        "semester": 7,
+        "objectId": "4A2FC580-F02C-5E42-FF0F-970438DF6D00"
+      },
+
+      {
+        "subject": "DESIGN AND DRAWING OF REINFORCED CONCRETE STRUCTURES",
+        "branch": "CIVIL",
+        "semester": 8,
+        "objectId": "194F40AB-AA92-562A-FF31-488EB0E5DF00"
+      },
+
+      {
+        "subject": "PRESTRESSED CONCRETE",
+        "branch": "CIVIL",
+        "semester": 7,
+        "objectId": "05F6A4B3-D81D-0197-FFB9-04210894D100"
+      },
+
+      {
+        "subject": "ADVANCED COMPUTATIONAL TECHNIQUES",
+        "branch": "CIVIL",
+        "semester": 7,
+        "objectId": "BE83FC60-6F8F-74F0-FFE3-47E845731000"
+      },
+
+      {
+        "subject": "REINFORCED CONCRETE REPAIRS AND MAINTENACE",
+        "branch": "CIVIL",
+        "semester": 7,
+        "objectId": "DF0E166B-D94D-455A-FF88-8914B39CAB00"
+      },
+
+      {
+        "subject": "AIR POLLUTION",
+        "branch": "CIVIL",
+        "semester": 7,
+        "objectId": "5FF2F710-0D04-2468-FF1D-C8731BFD2E00"
+      },
+
+      {
+        "subject": "PAVEMENT SUBGRADE AND MATERIALS",
+        "branch": "CIVIL",
+        "semester": 7,
+        "objectId": "736A4C28-0F97-5C64-FFFC-0D488DA1B600"
+      },
+
+      {
+        "subject": "ADVANCED FOUNDATION ENGINEERING",
+        "branch": "CIVIL",
+        "semester": 7,
+        "objectId": "4098872B-147C-69FA-FF7A-2CF76D0B4700"
+      },
+
+      {
+        "subject": "GROUND WATER HYDROLOGY",
+        "branch": "CIVIL",
+        "semester": 7,
+        "objectId": "C69C81F8-EF38-8526-FFB5-F45F4675A500"
+      },
+
+      {
+        "subject": "STRUCTURAL DYNAMICS",
+        "branch": "CIVIL",
+        "semester": 7,
+        "objectId": "316125E5-4EAF-BD3C-FF9C-3FBCDAAE9200"
+      },
+
+      {
+        "subject": "ADVANCED STRUCTURAL MECHANICS",
+        "branch": "CIVIL",
+        "semester": 7,
+        "objectId": "6394953F-5E88-4A62-FF1C-5F92B28A2100"
+      },
+
+      {
+        "subject": "ADVANCED STRUCTURAL ANALYSIS",
+        "branch": "CIVIL",
+        "semester": 7,
+        "objectId": "461D1E03-4896-C424-FFF9-377FB5CB2100"
+      },
+
+      {
+        "subject": "RISK AND VALUE MANAGEMENT",
+        "branch": "CIVIL",
+        "semester": 7,
+        "objectId": "FEE61F5E-0150-34AF-FF0C-BDEFBA36DF00"
+      },
+
+      {
+        "subject": "SYSTEMS APPROACH IN CIVIL ENGINEERING",
+        "branch": "CIVIL",
+        "semester": 7,
+        "objectId": "BEEF33B3-DC47-648B-FFE6-6E201E6F3900"
+      },
+
+      {
+        "subject": "SOLID WASTE MANAGEMENT",
+        "branch": "CIVIL",
+        "semester": 7,
+        "objectId": "C12DAE19-2275-8B73-FF90-3BA925142300"
+      },
+
+      {
+        "subject": "APPLIED HYDROOGY AND FLOOD CONTROL",
+        "branch": "CIVIL",
+        "semester": 7,
+        "objectId": "352CC2B8-40B4-2F57-FF05-A340CBFF1500"
+      },
+
+      {
+        "subject": "ADVANCED SURVEYING",
+        "branch": "CIVIL",
+        "semester": 7,
+        "objectId": "A6754643-DFCE-84FD-FF93-AF55AD683700"
+      },
+
+      {
+        "subject": "ADVANCED ENGINEERING GEOLOGY",
+        "branch": "CIVIL",
+        "semester": 7,
+        "objectId": "9257698A-81AE-BBDA-FF1B-1B7D6D100200"
+      },
+
+      {
+        "subject": "ENVIRONMENTAL ENGINEERING-II",
+        "branch": "CIVIL",
+        "semester": 7,
+        "objectId": "7C67EDB9-FD20-5BFA-FFEB-95999B298500"
+      },
+
+      {
+        "subject": "IRRIGATION ENGINEERING",
+        "branch": "CIVIL",
+        "semester": 7,
+        "objectId": "DCDB0610-822A-4CFB-FF02-47750E7A5C00"
+      },
+
+      {
+        "subject": "LIMIT STATE METHOD FOR REINFORCED CONCRETE STRUCTURES",
+        "branch": "CIVIL",
+        "semester": 7,
+        "objectId": "6093A76A-AFE3-F969-FF40-C66138AD1900"
+      },
+
+      {
+        "subject": "QUANTITY SURVEY,ESTIMATION AND VALUATION",
+        "branch": "CIVIL",
+        "semester": 7,
+        "objectId": "B83C365F-8E0F-FCFA-FF56-7BAB3A714600"
+      },
+
+      {
+        "subject": "THEORY OF REINFORCED PRESTRESSED CONCRETE",
+        "branch": "CIVIL",
+        "semester": 6,
+        "objectId": "3C5B4968-9957-C7DE-FF66-B8866E82E400"
+      },
+
+      {
+        "subject": "ENVIRONMENTAL ENGG  -  I",
+        "branch": "CIVIL",
+        "semester": 6,
+        "objectId": "F1F0836C-D0E8-1328-FFF4-F245A817D100"
+      },
+
+      {
+        "subject": "TRANSPORTATION ENGG.  - II",
+        "branch": "CIVIL",
+        "semester": 6,
+        "objectId": "82F15099-C763-50FE-FF6B-5F4A53503400"
+      },
+
+      {
+        "subject": "APPLIED HYDRAULICS  -  II",
+        "branch": "CIVIL",
+        "semester": 6,
+        "objectId": "FED3E93E-FE87-0902-FF6D-2DDFDC99F600"
+      },
+
+      {
+        "subject": "DESIGN AND DRAWING OF STEEL STRUCTURES",
+        "branch": "CIVIL",
+        "semester": 6,
+        "objectId": "19C9A4A2-880A-BB1F-FF50-5B2ECACD6200"
+      },
+
+      {
+        "subject": "GEOTECHNICAL ENGG.  -  II",
+        "branch": "CIVIL",
+        "semester": 6,
+        "objectId": "1EEFD84F-6590-2AC6-FF9B-31592F0A3000"
+      },
+
+      {
+        "subject": "TRANSPORTATION ENGG.  -  I",
+        "branch": "CIVIL",
+        "semester": 5,
+        "objectId": "CD2B042D-B5F6-486E-FFAD-004A65A03300"
+      },
+
+      {
+        "subject": "BUILDING DESIGN AND DRAWING  -  II",
+        "branch": "CIVIL",
+        "semester": 5,
+        "objectId": "FE843C18-4187-8EF6-FF03-A5A1E6B10200"
+      },
+
+      {
+        "subject": "APPLIED HYDRAULICS  -  I",
+        "branch": "CIVIL",
+        "semester": 5,
+        "objectId": "A815A2BB-3541-74C2-FFF2-5A385772CD00"
+      },
+
+      {
+        "subject": "GEOTECHNICAL ENGG. -  I",
+        "branch": "CIVIL",
+        "semester": 5,
+        "objectId": "0C862DA0-786B-D27B-FF9E-5615BCB5B200"
+      },
+
+      {
+        "subject": "STRUCTURAL ANALYSIS  -  II",
+        "branch": "CIVIL",
+        "semester": 5,
+        "objectId": "1A568A80-9EF2-E568-FFCE-6FD797142000"
+      },
+
+      {
+        "subject": "FLUID MECHANICS  -  II",
+        "branch": "CIVIL",
+        "semester": 4,
+        "objectId": "7CBE1F2E-D511-403D-FF3C-1D0A8128B100"
+      },
+
+      {
+        "subject": "BUILDING DESIGN AND DRAWING  -  I",
+        "branch": "CIVIL",
+        "semester": 4,
+        "objectId": "E8535E90-3F51-7CDF-FF75-E65F9AEA4D00"
+      },
+
+      {
+        "subject": "CONCRETE TECHNOLOGY",
+        "branch": "CIVIL",
+        "semester": 4,
+        "objectId": "FB673C54-E1DC-356E-FFF1-891FECAF0000"
+      },
+
+      {
+        "subject": "STRUCTURAL ANALYSIS  -  I",
+        "branch": "CIVIL",
+        "semester": 4,
+        "objectId": "B96C51B7-DA74-3797-FF31-A32B06381900"
+      },
+
+      {
+        "subject": "SURVEYING  -  II",
+        "branch": "CIVIL",
+        "semester": 4,
+        "objectId": "42634D83-5ABB-DB54-FFD6-996817393500"
+      },
+
+      {
+        "subject": "FLUID MECHANICS  -  I",
+        "branch": "CIVIL",
+        "semester": 3,
+        "objectId": "A5B80315-D353-C3A2-FF4F-158A726A2A00"
+      },
+
+      {
+        "subject": "APPLIED MATHEMATICS  -  IV",
+        "branch": "CIVIL",
+        "semester": 4,
+        "objectId": "99E9F6F3-D401-54B1-FFB1-23893A5B1A00"
+      },
+
+      {
+        "subject": "ENGINEERING GEOLOGY",
+        "branch": "CIVIL",
+        "semester": 3,
+        "objectId": "B530ADEC-19BB-4DFE-FF59-772A03613500"
+      },
+
+      {
+        "subject": "BUILDING MATERIALS AND CONSTRUCTION",
+        "branch": "CIVIL",
+        "semester": 3,
+        "objectId": "F2C229A9-BFCE-3EB2-FF2D-690E429A7100"
+      },
+
+      {
+        "subject": "STRENGTH OF MATERIALS",
+        "branch": "CIVIL",
+        "semester": 3,
+        "objectId": "F1EB70CE-BE4D-6625-FF21-6D1863A07A00"
+      },
+
+      {
+        "subject": "SURVEYING  -  I",
+        "branch": "CIVIL",
+        "semester": 3,
+        "objectId": "169D4957-85E1-1974-FF3F-6BBE8D8FE500"
+      },
+
+      {
+        "subject": "APPLIED MATHEMATICS III",
+        "branch": "CIVIL",
+        "semester": 3,
+        "objectId": "CBE42A93-2365-F87C-FFF3-AEDAE2774500"
+      },
+
+      {
+        "subject": "NANOTECHNOLOGY",
+        "branch": "CHEM",
+        "semester": 8,
+        "objectId": "5BCCC0D0-844F-F7B8-FFEA-39262C4D5E00"
+      },
+
+      {
+        "subject": "PHARMACEUTICAL",
+        "branch": "CHEM",
+        "semester": 8,
+        "objectId": "62E12A0C-C5E8-643B-FFDC-72247725B600"
+      },
+
+      {
+        "subject": "MEMBRANE PROCESS DESIGN TECHNOLOGY",
+        "branch": "CHEM",
+        "semester": 8,
+        "objectId": "63C7015C-9EE5-DF4F-FFE1-221DBA32C900"
+      },
+
+      {
+        "subject": "ENERGY SYSTEM DESIGN",
+        "branch": "CHEM",
+        "semester": 8,
+        "objectId": "3916C772-50E5-A7B0-FF78-CC670DC79B00"
+      },
+
+      {
+        "subject": "INDUSTRIAL SAFETY",
+        "branch": "CHEM",
+        "semester": 8,
+        "objectId": "9DC54C0B-E4F7-7516-FF01-C67DC64A6800"
+      },
+
+      {
+        "subject": "MODELING & SIMULATION IN CHEMICAL ENGINEERING",
+        "branch": "CHEM",
+        "semester": 8,
+        "objectId": "FC72D917-AFEA-0EBB-FF15-EC0C5DB85D00"
+      },
+
+      {
+        "subject": "CHEMICAL REACTION ENGINEERING",
+        "branch": "CHEM",
+        "semester": 8,
+        "objectId": "1C75FAC1-96F9-D219-FF7D-FBD38183DB00"
+      },
+
+      {
+        "subject": "ENVIRONMENTAL ENGINEERING",
+        "branch": "CHEM",
+        "semester": 8,
+        "objectId": "A85136C0-ADE1-BF77-FF17-8519E26A0800"
+      },
+
+      {
+        "subject": "PROJECT ENGINEERING AND ENTREPRENEURSHIP MANAGEMENT",
+        "branch": "CHEM",
+        "semester": 7,
+        "objectId": "5655AE73-BE17-6EB2-FF88-04A55829DA00"
+      },
+
+      {
+        "subject": "NUCLEAR",
+        "branch": "CHEM",
+        "semester": 7,
+        "objectId": "C6AFB27E-65A2-3579-FF0D-CED0425FE800"
+      },
+
+      {
+        "subject": "PETROCHEMICAL AND REFINING",
+        "branch": "CHEM",
+        "semester": 7,
+        "objectId": "9CCFDAEC-F950-59F1-FFD1-1819F8177D00"
+      },
+
+      {
+        "subject": "POLYMER ENGINEERING",
+        "branch": "CHEM",
+        "semester": 7,
+        "objectId": "545DF937-E092-463F-FF3D-A4FA1D923F00"
+      },
+
+      {
+        "subject": "FOOD PROCESS ENGINEERING ",
+        "branch": "CHEM",
+        "semester": 7,
+        "objectId": "111413DF-ED2E-CABE-FF83-4ACBB4F9B000"
+      },
+
+      {
+        "subject": "PROCESS ENGINEERING",
+        "branch": "CHEM",
+        "semester": 7,
+        "objectId": "1B2779CB-202B-0F58-FF7F-449B4ADFFA00"
+      },
+
+      {
+        "subject": "BIO TECHNOLOGY",
+        "branch": "CHEM",
+        "semester": 7,
+        "objectId": "F232068F-EF44-BB29-FFC1-2C336BED5E00"
+      },
+
+      {
+        "subject": "REACTION KINETICs",
+        "branch": "CHEM",
+        "semester": 7,
+        "objectId": "B66666C0-2AE2-6C0C-FF1C-534356A58E00"
+      },
+
+      {
+        "subject": "INSTRUMENTATION & PROCESS CONTROL",
+        "branch": "CHEM",
+        "semester": 7,
+        "objectId": "1E422F5E-271B-CEA1-FFE6-C9045A618E00"
+      },
+
+      {
+        "subject": "CHEMICAL PROCESS-II",
+        "branch": "CHEM",
+        "semester": 7,
+        "objectId": "167F6060-CD6A-BC32-FF1C-C60D6DF4F400"
+      },
+
+      {
+        "subject": "MANAGEMENT STREAM",
+        "branch": "CHEM",
+        "semester": 6,
+        "objectId": "62827F04-F33E-E95B-FF21-16F721927D00"
+      },
+
+      {
+        "subject": "OPERATION RESEARCH",
+        "branch": "CHEM",
+        "semester": 6,
+        "objectId": "07CBEB4F-61A8-AECF-FF2F-27EFEC196300"
+      },
+
+      {
+        "subject": "CHEMICAL REACTION ENGINEERING- II",
+        "branch": "CHEM",
+        "semester": 6,
+        "objectId": "B5F40970-2302-173B-FF85-840A7424DA00"
+      },
+
+      {
+        "subject": "PLANT ENGINEERING",
+        "branch": "CHEM",
+        "semester": 6,
+        "objectId": "14ABFB40-86DE-AD0A-FF88-8F5C2C0A7B00"
+      },
+
+      {
+        "subject": "HEAT TRANSFER OPERATIONS- II",
+        "branch": "CHEM",
+        "semester": 6,
+        "objectId": "F72309B7-6868-F1A8-FF7E-33740B70EF00"
+      },
+
+      {
+        "subject": "MASS TRANSFER OPERATIONS - II",
+        "branch": "CHEM",
+        "semester": 6,
+        "objectId": "A9BD7F9C-E846-1E29-FFFE-E89585713400"
+      },
+
+      {
+        "subject": "INSTRUMENTATION",
+        "branch": "CHEM",
+        "semester": 6,
+        "objectId": "2E60043C-0060-EEEE-FF9D-92857E4C7D00"
+      },
+
+      {
+        "subject": "CHEMICAL TECHNOLOGY",
+        "branch": "CHEM",
+        "semester": 5,
+        "objectId": "952AD304-7022-6D7E-FF32-0A6541951600"
+      },
+
+      {
+        "subject": "CHEMICAL REACTION ENGINEERING - I",
+        "branch": "CHEM",
+        "semester": 5,
+        "objectId": "B3C82909-78E8-5AD4-FF7C-4D3CE249C400"
+      },
+
+      {
+        "subject": "HEAT TRANSFER OPERATIONS-I",
+        "branch": "CHEM",
+        "semester": 5,
+        "objectId": "C1989840-4CE3-E3E1-FFC1-D41A05EED800"
+      },
+
+      {
+        "subject": "MASS TRANSFER OPERATIONS  -  I",
+        "branch": "CHEM",
+        "semester": 5,
+        "objectId": "1A8165C7-196D-1D9F-FF9B-9CE250E68900"
+      },
+
+      {
+        "subject": "CHEMICAL ENGINEERING THERMODYNAMICS  -  II",
+        "branch": "CHEM",
+        "semester": 5,
+        "objectId": "2122A564-B41E-67FB-FF48-637F99D47600"
+      },
+
+      {
+        "subject": "SOLID FLUID MECHANICAL OPERATIONs",
+        "branch": "CHEM",
+        "semester": 4,
+        "objectId": "9C4B9E1C-93E6-AB45-FFF8-AA41ABDB5800"
+      },
+
+      {
+        "subject": "MECHANICAL EQUIPMENT DESIGN",
+        "branch": "CHEM",
+        "semester": 4,
+        "objectId": "5CF82760-C86F-F209-FF92-E4DC10455800"
+      },
+
+      {
+        "subject": "MATERIAL SCIENCE &ENGINEERING",
+        "branch": "CHEM",
+        "semester": 4,
+        "objectId": "E57CE05F-6402-056D-FFB3-38A51E0D1800"
+      },
+
+      {
+        "subject": "CHEMICAL ENGG. THERMODYNAMICS  -  I",
+        "branch": "CHEM",
+        "semester": 4,
+        "objectId": "798CEA9D-DCE9-BC9A-FFC8-1B27CFD28400"
+      },
+
+      {
+        "subject": "ENGINEERING CHEMISTRY-II",
+        "branch": "CHEM",
+        "semester": 4,
+        "objectId": "D1C19B18-9A6C-E004-FF3F-795422A1A300"
+      },
+
+      {
+        "subject": "APPLIED MATHEMATICS-IV",
+        "branch": "CHEM",
+        "semester": 4,
+        "objectId": "FA98678C-438F-00FB-FF15-883A64642800"
+      },
+
+      {
+        "subject": "CHEMICAL ENGINEERING ECONOMICs",
+        "branch": "CHEM",
+        "semester": 3,
+        "objectId": "11EF454B-38A1-2E21-FF85-CA3BF195B300"
+      },
+
+      {
+        "subject": "COMPUTER PROGRAMMING & NUMERICAL METHODs",
+        "branch": "CHEM",
+        "semester": 3,
+        "objectId": "179B6640-89CF-1425-FF28-5B572FE0A700"
+      },
+
+      {
+        "subject": "PROCESS CALCULATIONs",
+        "branch": "CHEM",
+        "semester": 3,
+        "objectId": "C7B1B429-4FB8-FC90-FFC3-E7A841466100"
+      },
+
+      {
+        "subject": "FLUID FLOW",
+        "branch": "CHEM",
+        "semester": 3,
+        "objectId": "C4F3E66F-DD7F-87D2-FF1A-460E6BC9AA00"
+      },
+
+      {
+        "subject": "ENGINEERING CHEMISTRY-I",
+        "branch": "CHEM",
+        "semester": 3,
+        "objectId": "A1CF2E07-2973-1457-FF04-2E2795DFED00"
+      },
+
+      {
+        "subject": "APPLIED MATHEMATICS III",
+        "branch": "CHEM",
+        "semester": 3,
+        "objectId": "A21A0C25-6EA2-ADF1-FF64-15545E8F9C00"
+      },
+
+      {
+        "subject": "VIRTUAL REALITY",
+        "branch": "AUTO",
+        "semester": 8,
+        "objectId": "391470BF-3D4C-2F29-FF1E-47965D549300"
+      },
+
+      {
+        "subject": "ARTIFICIAL INTELLIGENCE",
+        "branch": "AUTO",
+        "semester": 8,
+        "objectId": "D489BFC4-3AEF-EB59-FF4F-DA7299C70900"
+      },
+
+      {
+        "subject": "KNOWLEDGE MANAGEMENT",
+        "branch": "AUTO",
+        "semester": 8,
+        "objectId": "F0EEA009-76E1-3CFC-FF4C-64D7E2FF8300"
+      },
+
+      {
+        "subject": "PROJRCT MANAGEMENT ",
+        "branch": "AUTO",
+        "semester": 8,
+        "objectId": "6B0BEC4A-7340-5864-FFB5-2487A0117100"
+      },
+
+      {
+        "subject": "WORLD CLASS MANUFACTURING",
+        "branch": "AUTO",
+        "semester": 8,
+        "objectId": "1F6CD96E-B448-155A-FFFA-319F252E0B00"
+      },
+
+      {
+        "subject": "VEHICLE SAFETY",
+        "branch": "AUTO",
+        "semester": 8,
+        "objectId": "D11461AB-82FD-6DAE-FFA8-9281C3F22100"
+      },
+
+      {
+        "subject": "NOISE VIBRATIONS AND HARSHNESS",
+        "branch": "AUTO",
+        "semester": 8,
+        "objectId": "C929CF50-A866-6A7A-FFCA-17FE86396600"
+      },
+
+      {
+        "subject": "VEHICLE MAINTENENCE",
+        "branch": "AUTO",
+        "semester": 8,
+        "objectId": "23DCFBCC-55EB-E68B-FFAA-BCC1EE97C000"
+      },
+
+      {
+        "subject": "VEHICLE DYNAMICS",
+        "branch": "AUTO",
+        "semester": 8,
+        "objectId": "C92730A0-49DE-D88D-FF99-A9D6C9E1D100"
+      },
+
+      {
+        "subject": "AUTOTRONICS",
+        "branch": "AUTO",
+        "semester": 8,
+        "objectId": "65C90099-3E3F-501E-FF4D-FB11E1591700"
+      },
+
+      {
+        "subject": "INDUSTRIAL ROBOTICS",
+        "branch": "AUTO",
+        "semester": 7,
+        "objectId": "0AC9A000-0064-B001-FFD1-7E7652E8F800"
+      },
+
+      {
+        "subject": "TRANSPORTATION MANAGEMENT MOTOR INDUSTRY",
+        "branch": "AUTO",
+        "semester": 7,
+        "objectId": "BCC94940-DDC0-E90A-FF62-49432C67D900"
+      },
+
+      {
+        "subject": "COMPUTATIONAL FLUID DYNAMICS",
+        "branch": "AUTO",
+        "semester": 7,
+        "objectId": "AF85F369-0C20-70D9-FF4B-8882E5018C00"
+      },
+
+      {
+        "subject": "AUTOMOTIVE EMBEDDED SYSTEMS",
+        "branch": "AUTO",
+        "semester": 7,
+        "objectId": "762D4E07-6B02-2D56-FFD6-E9773448B000"
+      },
+
+      {
+        "subject": "TRIBOLOGY",
+        "branch": "AUTO",
+        "semester": 7,
+        "objectId": "25CF97F4-157B-CEB0-FF91-6995DDD0CA00"
+      },
+
+      {
+        "subject": "POWER PLANT ENGINEERING",
+        "branch": "AUTO",
+        "semester": 7,
+        "objectId": "4FE232DE-8399-97ED-FFEF-3B8E1ACB2200"
+      },
+
+      {
+        "subject": "SUPPLY CHAIN MANAGEMENT",
+        "branch": "AUTO",
+        "semester": 7,
+        "objectId": "35ED606D-F414-E602-FFA5-E86909DA3300"
+      },
+
+      {
+        "subject": "PRODUCT DESIGN AND DEVELOPMENT",
+        "branch": "AUTO",
+        "semester": 7,
+        "objectId": "B2E953A1-B579-25CA-FFA3-A75CC2877200"
+      },
+
+      {
+        "subject": "AUTOMOTIVE DESIGN",
+        "branch": "AUTO",
+        "semester": 7,
+        "objectId": "498F7734-1C14-DAC7-FFAF-18A053454100"
+      },
+
+      {
+        "subject": "CAD/CAM/CAE",
+        "branch": "AUTO",
+        "semester": 7,
+        "objectId": "F18A9E12-870E-F2A0-FFC6-C798E16EBA00"
+      },
+
+      {
+        "subject": "CHASSIS BODY ENGINEERING",
+        "branch": "AUTO",
+        "semester": 7,
+        "objectId": "FD25FE50-0D30-E1CC-FF66-924649829C00"
+      },
+
+      {
+        "subject": "AUTOMOTIVE SYSTEM",
+        "branch": "AUTO",
+        "semester": 6,
+        "objectId": "31C05E1F-079D-766C-FF43-558544A51100"
+      },
+
+      {
+        "subject": "FINITE ELEMENT ANALYSIS",
+        "branch": "AUTO",
+        "semester": 6,
+        "objectId": "C87FE5E0-FDE6-0B1F-FF9D-4B3DC411C100"
+      },
+
+      {
+        "subject": "OPERATION RESEARCH",
+        "branch": "AUTO",
+        "semester": 6,
+        "objectId": "65BDA4CC-1931-6CF7-FF27-46425C445F00"
+      },
+
+      {
+        "subject": "THERMAL AND FLUID POWER ENGINEERING",
+        "branch": "AUTO",
+        "semester": 6,
+        "objectId": "EBB9E05B-46F7-3CFE-FF86-6A20BF3C3E00"
+      },
+
+      {
+        "subject": "MACHINE DESIGN I",
+        "branch": "AUTO",
+        "semester": 6,
+        "objectId": "67BA82DD-C0F4-B4EB-FFCF-68CE497AB800"
+      },
+
+      {
+        "subject": "MECHANICAL VIBRATIONS",
+        "branch": "AUTO",
+        "semester": 6,
+        "objectId": "A6C81610-A38A-0407-FF83-6FEB5B59E000"
+      },
+
+      {
+        "subject": "HEAT TRANSFER",
+        "branch": "AUTO",
+        "semester": 5,
+        "objectId": "898A50EB-9F49-9BE5-FFF8-FB4A7366E600"
+      },
+
+      {
+        "subject": "THEORY OF MACHINES- II",
+        "branch": "AUTO",
+        "semester": 5,
+        "objectId": "217252D6-D855-4F55-FFD5-F453A13DC700"
+      },
+
+      {
+        "subject": "PRODUCTION PROCESS-III",
+        "branch": "AUTO",
+        "semester": 5,
+        "objectId": "000AEAFA-AEAA-FC8B-FF8C-578BA1C96E00"
+      },
+
+      {
+        "subject": "METROLOGY AND QUALITY ENGINEERING",
+        "branch": "AUTO",
+        "semester": 5,
+        "objectId": "7C731BB4-134B-0AB7-FF0C-8832E0B1CE00"
+      },
+
+      {
+        "subject": "I C ENGINES",
+        "branch": "AUTO",
+        "semester": 5,
+        "objectId": "E3EE6379-C4CC-8602-FFBD-82F97BD85300"
+      },
+
+      {
+        "subject": "INDUSTRIAL ELECTRONICS",
+        "branch": "AUTO",
+        "semester": 4,
+        "objectId": "E10A4305-65A2-A33D-FF4F-241C170C2F00"
+      },
+
+      {
+        "subject": "MATERIAL TECHNOLOGY",
+        "branch": "AUTO",
+        "semester": 4,
+        "objectId": "8CDD0340-D0E4-7E66-FF68-A69F37871F00"
+      },
+
+      {
+        "subject": "PRODUCTION PROCESS- II",
+        "branch": "AUTO",
+        "semester": 4,
+        "objectId": "F5EA5B0F-202F-F898-FF4C-09BBDBF73A00"
+      },
+
+      {
+        "subject": "THEORY OF MACHINES- I",
+        "branch": "AUTO",
+        "semester": 4,
+        "objectId": "17321195-A18A-65BF-FFD0-AA7F72022F00"
+      },
+
+      {
+        "subject": "FLUID MECHANICS",
+        "branch": "AUTO",
+        "semester": 4,
+        "objectId": "BC8C0B84-595D-0A1B-FF7E-71894DA1E700"
+      },
+
+      {
+        "subject": "APPLIED MATHEMATICS IV",
+        "branch": "AUTO",
+        "semester": 4,
+        "objectId": "D779F0E1-DB24-7D3F-FF46-14D02D724800"
+      },
+
+      {
+        "subject": "COMPUTER AIDED M/C DESIGN",
+        "branch": "AUTO",
+        "semester": 3,
+        "objectId": "7A2716DA-4452-0D59-FF08-2FCEA22E0500"
+      },
+
+      {
+        "subject": "PRODUCTION PROCESS- I",
+        "branch": "AUTO",
+        "semester": 3,
+        "objectId": "11B82D95-5506-0C86-FFA7-D19C37022C00"
+      },
+
+      {
+        "subject": "STRENGTH OF MATERIALS",
+        "branch": "AUTO",
+        "semester": 3,
+        "objectId": "1065F58D-324F-A076-FF4B-C7A852FDBD00"
+      },
+
+      {
+        "subject": "THERMODYNAMICS",
+        "branch": "AUTO",
+        "semester": 3,
+        "objectId": "C5325F5B-AE95-90BB-FF96-8A6739C05B00"
+      },
+
+      {
+        "subject": "APPLIED MATHEMATICS III",
+        "branch": "AUTO",
+        "semester": 3,
+        "objectId": "C7501591-781C-9D64-FF97-9CACD5E7FD00"
+      },
+
+      {
+        "subject": "COMMUNICATION SKILLS",
+        "branch": "FE",
+        "semester": 2,
+        "objectId": "550EB376-4C64-FBC5-FFD7-FABD549FDE00"
+      },
+
+      {
+        "subject": "ENVIRONMENTAL STUDIES",
+        "branch": "FE",
+        "semester": 1,
+        "objectId": "D3424CD9-A94B-7641-FF38-274E85181F00"
+      },
+
+      {
+        "subject": "ENGINEERING DRAWING",
+        "branch": "FE",
+        "semester": 2,
+        "objectId": "F745F418-7E15-1D70-FFB1-7484F1CA4900"
+      },
+
+      {
+        "subject": "STRUCTURED PROGRAMMING APPROACH",
+        "branch": "FE",
+        "semester": 2,
+        "objectId": "5CDC8AA2-CCE5-EE48-FFF6-42EAC4F4C700"
+      },
+
+      {
+        "subject": "APPLIED PHYSICS 2",
+        "branch": "FE",
+        "semester": 2,
+        "objectId": "78F8BA77-5BA8-57B8-FF35-DCD66B9D0400"
+      },
+
+      {
+        "subject": "APPLIED CHEMISTRY 2",
+        "branch": "FE",
+        "semester": 2,
+        "objectId": "60CBDC49-B9C3-AB48-FF18-AED5D7FC8E00"
+      },
+
+      {
+        "subject": "APPLIED CHEMISTRY 1",
+        "branch": "FE",
+        "semester": 1,
+        "objectId": "7A35F1AF-F827-A76A-FF11-76411B763F00"
+      },
+
+      {
+        "subject": "APPLIED PHYSICS 1",
+        "branch": "FE",
+        "semester": 1,
+        "objectId": "A1BD33B8-12B4-BA90-FF77-035E5FCD0000"
+      },
+
+      {
+        "subject": "BASIC ELECTRICAL AND ELECTRONICS ENGINEERING",
+        "branch": "FE",
+        "semester": 1,
+        "objectId": "E3E7ED85-5B67-9A27-FF8F-8C4075C6A400"
+      },
+
+      {
+        "subject": "MECHANICS",
+        "branch": "FE",
+        "semester": 1,
+        "objectId": "F0994D3F-8CAE-93FD-FF2C-812746F88400"
+      },
+
+      {
+        "subject": "APPLIED MATHEMATICS 2",
+        "branch": "FE",
+        "semester": 2,
+        "objectId": "0D8A698A-B663-BC1C-FF04-FBA91A87A600"
+      },
+
+      {
+        "subject": "APPLIED MATHEMATICS 1",
+        "branch": "FE",
+        "semester": 1,
+        "objectId": "4B665822-1253-F65B-FFB4-650C213F0E00"
+      },
+
+      {
+        "subject": "PRODUCT DESIGN AND DEVELOPMENT",
+        "branch": "MTRX",
+        "semester": 8,
+        "objectId": "36A374F4-AEC3-E9DA-FFBA-D07CD738D700"
+      },
+
+      {
+        "subject": "MACHINE INTERFACE DESIGN",
+        "branch": "MTRX",
+        "semester": 8,
+        "objectId": "01D151D1-C74A-E94C-FFF0-3A3935E42A00"
+      },
+
+      {
+        "subject": "MICROFABRICATION PROCESSES",
+        "branch": "MTRX",
+        "semester": 8,
+        "objectId": "92D2F870-D808-547F-FF46-365BD652C200"
+      },
+
+      {
+        "subject": "MEDICAL MECHATRONICS",
+        "branch": "MTRX",
+        "semester": 8,
+        "objectId": "854493A4-6FF0-E23F-FFBA-AAA6A28A1400"
+      },
+
+      {
+        "subject": "ROBOTICS AND MACHINE VISSION",
+        "branch": "MTRX",
+        "semester": 8,
+        "objectId": "46F95BB6-924E-C096-FF15-17A1EB236700"
+      },
+
+      {
+        "subject": "FINITE ELEMENT ANALYSIS",
+        "branch": "MTRX",
+        "semester": 7,
+        "objectId": "6FD070F4-A332-3F27-FFC5-242D835E8C00"
+      },
+
+      {
+        "subject": "OPTIMIZATION",
+        "branch": "MTRX",
+        "semester": 7,
+        "objectId": "0E2088BF-2607-2E34-FF52-6D05F1A37800"
+      },
+
+      {
+        "subject": "NEUTRAL NETWORK AND FUZZY LOGIC",
+        "branch": "MTRX",
+        "semester": 7,
+        "objectId": "F6EF4B0D-D90A-6BD4-FF28-6CF7C25D7700"
+      },
+
+      {
+        "subject": "MICRO-ELECTRO MECHANICAL SYSTEMS",
+        "branch": "MTRX",
+        "semester": 7,
+        "objectId": "1310DA4D-A814-E30C-FF7A-71565CDB4000"
+      },
+
+      {
+        "subject": "MODELLING AND SIMULATION",
+        "branch": "MTRX",
+        "semester": 8,
+        "objectId": "9FA6DD70-9D4E-0BEF-FFA6-522B853A3200"
+      },
+
+      {
+        "subject": "DIGITAL SIGNAL PROCESSING",
+        "branch": "MTRX",
+        "semester": 7,
+        "objectId": "6A2641F9-291B-71D3-FF31-0CB818E18D00"
+      },
+
+      {
+        "subject": "ENGENNERING MANAGEMENT AND ECONOMICS",
+        "branch": "MTRX",
+        "semester": 8,
+        "objectId": "62E26F70-FEEC-8024-FF96-2A52040A9A00"
+      },
+
+      {
+        "subject": "DESIGN OF MECHATRONICS SYSTEM",
+        "branch": "MTRX",
+        "semester": 8,
+        "objectId": "0721A3AF-64E4-072D-FF72-54BF60C6C700"
+      },
+
+      {
+        "subject": "AUTOMOTIVE ELECTRONICS",
+        "branch": "MTRX",
+        "semester": 7,
+        "objectId": "E544DBFF-A607-64DC-FF23-D3B017E2C400"
+      },
+
+      {
+        "subject": "COMMUNICATION SYSYTEM",
+        "branch": "MTRX",
+        "semester": 7,
+        "objectId": "8C0A5438-A31D-8D5A-FFAE-85F13BF07D00"
+      },
+
+      {
+        "subject": "CAD/CAM/CAE",
+        "branch": "MTRX",
+        "semester": 7,
+        "objectId": "11EBEA04-DB9E-3A5C-FFB3-74792FE4C000"
+      },
+
+      {
+        "subject": "MANUFACTURING PLANNING AND CONTROL",
+        "branch": "MTRX",
+        "semester": 7,
+        "objectId": "A2353F92-4A12-EA59-FFD8-0947FAFC5000"
+      },
+
+      {
+        "subject": "APPLIED HYDRAULICS AND PNEUMATICS",
+        "branch": "MTRX",
+        "semester": 6,
+        "objectId": "4D0EB688-BF22-A647-FF2A-3E21C6013D00"
+      },
+
+      {
+        "subject": "INSTRUMENTATION AND CONTROL",
+        "branch": "MTRX",
+        "semester": 6,
+        "objectId": "260B4720-8A05-8F0E-FF9D-2737B0421600"
+      },
+
+      {
+        "subject": "DYNAMICS OF MACIENERY",
+        "branch": "MTRX",
+        "semester": 6,
+        "objectId": "5611AABE-4BCB-5640-FF7B-FAB707FAED00"
+      },
+
+      {
+        "subject": "POWER ELECTRONICS AND DRIVES",
+        "branch": "MTRX",
+        "semester": 6,
+        "objectId": "3459934C-BD13-2C52-FFC4-354E8DC75D00"
+      },
+
+      {
+        "subject": "CNC TECHNOLGY",
+        "branch": "MTRX",
+        "semester": 6,
+        "objectId": "0266A3A6-2D23-6E8F-FF0B-085E50960F00"
+      },
+
+      {
+        "subject": "METROLOGY AND QUALITY ENGINNERING",
+        "branch": "MTRX",
+        "semester": 6,
+        "objectId": "41DB0475-BC6B-4A0E-FF5B-0A8E9D630E00"
+      },
+
+      {
+        "subject": "EMBEDDED SYSTEM",
+        "branch": "MTRX",
+        "semester": 5,
+        "objectId": "4C6C0283-907A-9811-FF23-47A9A4F56200"
+      },
+
+      {
+        "subject": "OPERATING SYSTEM",
+        "branch": "MTRX",
+        "semester": 5,
+        "objectId": "33137D25-887C-6D4A-FFE7-E5AD1EC98B00"
+      },
+
+      {
+        "subject": "SENSORS AND ACTUATORS",
+        "branch": "MTRX",
+        "semester": 5,
+        "objectId": "90334FB5-AEAB-B2C5-FF34-C0E3DA653400"
+      },
+
+      {
+        "subject": "CONTROL SYSTEM",
+        "branch": "MTRX",
+        "semester": 5,
+        "objectId": "31F661F9-6AB7-855B-FF88-EB422C406100"
+      },
+
+      {
+        "subject": "MACHIENE DESIGN",
+        "branch": "MTRX",
+        "semester": 5,
+        "objectId": "9D509CF0-6B54-384B-FF81-F2D268A2A600"
+      },
+
+      {
+        "subject": "MANUFACTURING PROCESS",
+        "branch": "MTRX",
+        "semester": 5,
+        "objectId": "6D7E49D2-BB4C-D748-FFBB-90CDB5212500"
+      },
+
+      {
+        "subject": "SIGNALS AND SYSTEM",
+        "branch": "MTRX",
+        "semester": 4,
+        "objectId": "A8F8257A-119F-40B8-FF38-C6F5E3705600"
+      },
+
+      {
+        "subject": "APPLICATION OF INTEGRATED CIRCUIT",
+        "branch": "MTRX",
+        "semester": 4,
+        "objectId": "96A11136-963F-9977-FF40-FABAC7542200"
+      },
+
+      {
+        "subject": "STRENGHT OF MATERIAL",
+        "branch": "MTRX",
+        "semester": 4,
+        "objectId": "4F20966E-FA5A-8324-FF33-CDF60CAB8C00"
+      },
+
+      {
+        "subject": "FLUID MECHANICS AND MACHIENARY",
+        "branch": "MTRX",
+        "semester": 4,
+        "objectId": "606DA6A9-7459-06EA-FFFD-5BF79139BA00"
+      },
+
+      {
+        "subject": "APPLIED MATHEMATICS-4",
+        "branch": "MTRX",
+        "semester": 4,
+        "objectId": "23746876-28F8-EF3C-FF29-58C10A0BF200"
+      },
+
+      {
+        "subject": "KINEMATICS OF MACHIENARY",
+        "branch": "MTRX",
+        "semester": 4,
+        "objectId": "C2D57507-13F9-DB8D-FF19-81ACCFA1D100"
+      },
+
+      {
+        "subject": "OBJECT ORIENTED PROGRAMING LANGUAGE",
+        "branch": "MTRX",
+        "semester": 3,
+        "objectId": "03515E49-194E-C9E8-FFE9-81BA9DFE8A00"
+      },
+
+      {
+        "subject": "APPLIED ELECTRICAL AND ELECTRONICS",
+        "branch": "MTRX",
+        "semester": 3,
+        "objectId": "3B5D2996-6C4A-E30E-FFE6-096C155CAE00"
+      },
+
+      {
+        "subject": "THERMODYNAMICS AND HEAT TRANSFER",
+        "branch": "MTRX",
+        "semester": 3,
+        "objectId": "AFF5EF32-83FF-1BFA-FF7A-6D0696620C00"
+      },
+
+      {
+        "subject": "ENGINEERING MATERIALS AND METALLURGY",
+        "branch": "MTRX",
+        "semester": 3,
+        "objectId": "97A8B537-32A0-A65C-FF24-690A89895800"
+      },
+
+      {
+        "subject": "DIGITAL ELECTRONICS",
+        "branch": "MTRX",
+        "semester": 3,
+        "objectId": "02E5DEAC-9006-A179-FF51-CFDFE2475A00"
+      },
+
+      {
+        "subject": "DIGITAL PROTOTYPING FOR PRODUCT DESIGN-II",
+        "branch": "MECH",
+        "semester": 8,
+        "objectId": "31181456-BC90-2569-FF89-B5F824FA3C00"
+      },
+
+      {
+        "subject": "APPLIED MATHEMATICS-3",
+        "branch": "MTRX",
+        "semester": 3,
+        "objectId": "0A9399CC-C2EA-06E6-FF8D-BA0160805B00"
+      },
+
+      {
+        "subject": "WORLD CLASS MANUFACTURING",
+        "branch": "MECH",
+        "semester": 8,
+        "objectId": "85F89679-8919-D340-FFCC-4B3F07E9E200"
+      },
+
+      {
+        "subject": "NANOTECHNOLOGY",
+        "branch": "MECH",
+        "semester": 8,
+        "objectId": "2E106657-89EC-56FF-FF4F-C14AC87DA500"
+      },
+
+      {
+        "subject": "ALTERNATIVE FUELS",
+        "branch": "MECH",
+        "semester": 8,
+        "objectId": "213598B1-CB6F-7556-FF4A-35CB72E00800"
+      },
+
+      {
+        "subject": "ENTERPRISE RESOURCE PLANNING",
+        "branch": "MECH",
+        "semester": 8,
+        "objectId": "3DF72A30-F9C8-C3AE-FFB8-965BCECBB700"
+      },
+
+      {
+        "subject": "PROCESS EQUIPMENT DESIGN",
+        "branch": "MECH",
+        "semester": 8,
+        "objectId": "05AF1783-85F1-4D79-FF94-D446D1DE6000"
+      },
+
+      {
+        "subject": "AUTOMOBILE ENGINEERING",
+        "branch": "MECH",
+        "semester": 8,
+        "objectId": "096FCB13-75DF-255B-FFFF-A501B94CEB00"
+      },
+
+      {
+        "subject": "CRYOGENICS",
+        "branch": "MECH",
+        "semester": 8,
+        "objectId": "20A8FAFF-0E9E-DD49-FFF3-2A329DDA8000"
+      },
+
+      {
+        "subject": "PROJECT MANAGEMENT",
+        "branch": "MECH",
+        "semester": 8,
+        "objectId": "4F76B137-3264-A4FC-FF9F-9E7EAB86A900"
+      },
+
+      {
+        "subject": "BUISNEES PROCES REENGINEERING",
+        "branch": "MECH",
+        "semester": 8,
+        "objectId": "16CF6FC3-AB2B-A409-FFF6-971E95A9BA00"
+      },
+
+      {
+        "subject": "RENEWABLE ENERGY SORCES",
+        "branch": "MECH",
+        "semester": 8,
+        "objectId": "3796F33E-E01F-50B8-FFF3-332D3D15B400"
+      },
+
+      {
+        "subject": "MICRO ELECTRO MECHANICAL SYSTEMS",
+        "branch": "MECH",
+        "semester": 8,
+        "objectId": "5E139C85-4296-B5EF-FF0A-CBA7063B1E00"
+      },
+
+      {
+        "subject": "INDUSTRIAL ENGINEERING AND MANAGEMENT",
+        "branch": "MECH",
+        "semester": 8,
+        "objectId": "F56BBB14-4EAE-4326-FFAA-B9D19DD05E00"
+      },
+
+      {
+        "subject": "REFRIGERATION AND AIR CONDITIONING",
+        "branch": "MECH",
+        "semester": 8,
+        "objectId": "234D370D-958E-9F48-FF18-4FA48FB11700"
+      },
+
+      {
+        "subject": "DESIGN OF MECHANICAL SYSTEMS",
+        "branch": "MECH",
+        "semester": 8,
+        "objectId": "50CF6068-1619-A386-FF62-0CBE281D7C00"
+      },
+
+      {
+        "subject": "ROBOTICS",
+        "branch": "MECH",
+        "semester": 7,
+        "objectId": "A7652830-4426-20A4-FF86-4C1C96372500"
+      },
+
+      {
+        "subject": "DIGITAL PROTOTYPING FOR PRODUCT DESIGN-1",
+        "branch": "MECH",
+        "semester": 7,
+        "objectId": "EE073473-232D-9A83-FFFC-64C50380C300"
+      },
+
+      {
+        "subject": "TOTAL PRODUCTIVE MAINTENANCE",
+        "branch": "MECH",
+        "semester": 7,
+        "objectId": "A9E11ADE-9A0B-CC8C-FF9C-61B801DF3700"
+      },
+
+      {
+        "subject": "OPERATIONS RESEARCH",
+        "branch": "MECH",
+        "semester": 7,
+        "objectId": "08CCCEC3-3015-300E-FFCD-1F525263D700"
+      },
+
+      {
+        "subject": "EMISSION AND POLLUTION CONTROL",
+        "branch": "MECH",
+        "semester": 7,
+        "objectId": "4F712FC8-3D9D-03BF-FFB7-7B3C602DC700"
+      },
+
+      {
+        "subject": "PIPING ENGINEERING",
+        "branch": "MECH",
+        "semester": 7,
+        "objectId": "04B29027-FA54-3ED3-FFCC-3656C4273000"
+      },
+
+      {
+        "subject": "ADVANCED TURBO MACHINERY",
+        "branch": "MECH",
+        "semester": 7,
+        "objectId": "5B101336-A7B3-45BD-FF2B-F8C19EFA1500"
+      },
+
+      {
+        "subject": "SUPPLY CHAIN MANAGEMENT",
+        "branch": "MECH",
+        "semester": 7,
+        "objectId": "F28C0BB4-6739-A1E7-FF95-1F58CCF66E00"
+      },
+
+      {
+        "subject": "COMPUTATIONAL FLUID DYNAMICS",
+        "branch": "MECH",
+        "semester": 7,
+        "objectId": "C62C5905-465F-417F-FFDC-E1F060030500"
+      },
+
+      {
+        "subject": "ENERGY MANAGEMENT",
+        "branch": "MECH",
+        "semester": 7,
+        "objectId": "0ACB8804-30F7-1A20-FF2F-C57F23CFFA00"
+      },
+
+      {
+        "subject": "POWER PLANT ENGINEERING",
+        "branch": "MECH",
+        "semester": 7,
+        "objectId": "6CEBF508-C93D-B375-FF37-0EAC19D0F100"
+      },
+
+      {
+        "subject": "PRODUCT LIFE CYCLE MANAGEMENT",
+        "branch": "MECH",
+        "semester": 7,
+        "objectId": "E34FF552-96E7-AB86-FF89-A3614A883C00"
+      },
+
+      {
+        "subject": "PRODUCTION PLANNING AND CONTROL",
+        "branch": "MECH",
+        "semester": 7,
+        "objectId": "384D52E7-1E2C-DE6C-FF0B-BE7EFC736000"
+      },
+
+      {
+        "subject": "MECHANICAL UTILITY SYSTEM",
+        "branch": "MECH",
+        "semester": 7,
+        "objectId": "DAA2D7B3-CB68-4D7F-FF8F-FD4002908A00"
+      },
+
+      {
+        "subject": "CAD/CAM/CAE",
+        "branch": "MECH",
+        "semester": 7,
+        "objectId": "C5F44A1C-D4EC-A1CA-FF4A-C26F8FFB1000"
+      },
+
+      {
+        "subject": "MACHINE DESIGN-II",
+        "branch": "MECH",
+        "semester": 7,
+        "objectId": "23B4F33B-9E3E-0A53-FF06-31A2B03FB600"
+      },
+
+      {
+        "subject": "FINITE ELEMENT ANALYSIS",
+        "branch": "MECH",
+        "semester": 6,
+        "objectId": "C7873123-AFAB-773F-FF37-C81D057B6500"
+      },
+
+      {
+        "subject": "MECHATRONICS",
+        "branch": "MECH",
+        "semester": 6,
+        "objectId": "8BFD22B6-F6BE-1AF7-FF79-179C5E788D00"
+      },
+
+      {
+        "subject": "THERMAL AND FLUID POWER ENGINEERING",
+        "branch": "MECH",
+        "semester": 6,
+        "objectId": "45B4BE92-F35E-83E0-FF59-E10016FD3C00"
+      },
+
+      {
+        "subject": "MECHANICAL VIBRATIONS",
+        "branch": "MECH",
+        "semester": 6,
+        "objectId": "802A1B18-F727-5B5F-FF4C-704C6ED4A000"
+      },
+
+      {
+        "subject": "MACHINE DESIGN-1",
+        "branch": "MECH",
+        "semester": 6,
+        "objectId": "D66D4F95-EFED-1262-FF25-05E25EE68200"
+      },
+
+      {
+        "subject": "HEAT TRANSFER",
+        "branch": "MECH",
+        "semester": 5,
+        "objectId": "F38E29C8-6E9B-3E32-FF28-28ECAF12F600"
+      },
+
+      {
+        "subject": "METROLOGY AND QUALITY ENGINEERING",
+        "branch": "MECH",
+        "semester": 6,
+        "objectId": "73ACDD05-36CE-0A5D-FF04-646D29445500"
+      },
+
+      {
+        "subject": "I.C. ENGINEERING",
+        "branch": "MECH",
+        "semester": 5,
+        "objectId": "9AE50CF3-5619-1163-FFAA-371B281C3600"
+      },
+
+      {
+        "subject": "PRODUCTION PROCESS- III",
+        "branch": "MECH",
+        "semester": 5,
+        "objectId": "620D909C-2713-5D3D-FFF0-455EBFFD5900"
+      },
+
+      {
+        "subject": "MECHANICAL MEASUREMENT AND CONTROL",
+        "branch": "MECH",
+        "semester": 5,
+        "objectId": "3951280D-BBD8-B75F-FFB9-1A5D826DEF00"
+      },
+
+      {
+        "subject": "INDUSTRIAL ELECTRONICS",
+        "branch": "MECH",
+        "semester": 4,
+        "objectId": "6E56CD73-EBBF-50DA-FF13-C8940E885700"
+      },
+
+      {
+        "subject": "THEORY OF MACHINES-II",
+        "branch": "MECH",
+        "semester": 5,
+        "objectId": "20BFC8C8-B210-DCF4-FFA6-3034687FD800"
+      },
+
+      {
+        "subject": "PRODUCTION PROCESSES-II",
+        "branch": "MECH",
+        "semester": 4,
+        "objectId": "02D94B95-71C2-0E0E-FF1B-AC0DC7125F00"
+      },
+
+      {
+        "subject": "MATERIALS TECHNOLOGY",
+        "branch": "MECH",
+        "semester": 4,
+        "objectId": "5636D08C-2AC8-31DD-FF10-B52430F75600"
+      },
+
+      {
+        "subject": "THEORY OF MACHINES-I",
+        "branch": "MECH",
+        "semester": 4,
+        "objectId": "E6989E88-74AB-DB9E-FFAC-61D5604DDF00"
+      },
+
+      {
+        "subject": "FLUID MECHANICS",
+        "branch": "MECH",
+        "semester": 4,
+        "objectId": "2BBA37D8-1449-A75E-FF94-B0F764CF9200"
+      },
+
+      {
+        "subject": "APPLIED MATHEMATICS - IV",
+        "branch": "MECH",
+        "semester": 4,
+        "objectId": "5542BFC4-8623-5A1D-FFE9-E768F1F84B00"
+      },
+
+      {
+        "subject": "PRODUCTION PROCESS- I",
+        "branch": "MECH",
+        "semester": 3,
+        "objectId": "C981600E-2722-8343-FF4E-78C9A114FE00"
+      },
+
+      {
+        "subject": "THERMODYNAMICS",
+        "branch": "MECH",
+        "semester": 3,
+        "objectId": "5CD42E56-9CB7-C36C-FF9F-E52848722700"
+      },
+
+      {
+        "subject": "STRENGTH OF MATERIALS",
+        "branch": "MECH",
+        "semester": 3,
+        "objectId": "5B8B95F0-FED3-65E8-FFF7-EB819DD47500"
+      },
+
+      {
+        "subject": "APPLIED MATHEMATICS III",
+        "branch": "MECH",
+        "semester": 3,
+        "objectId": "025A1EF6-C821-4B7A-FF0D-E5D2E74F8D00"
+      },
+
+      {
+        "subject": "Software Testing & Quality Assrance",
+        "branch": "IT",
+        "semester": 8,
+        "objectId": "DAA40022-9E68-3FC1-FFFE-D82CA77E0C00"
+      },
+
+      {
+        "subject": " Soft Computing ",
+        "branch": "IT",
+        "semester": 8,
+        "objectId": "37A801B2-EC68-3DC0-FF3C-4B7C5D193A00"
+      },
+
+      {
+        "subject": "Robotics",
+        "branch": "IT",
+        "semester": 8,
+        "objectId": "D221F49A-FE41-0C7F-FF37-D4870BD55600"
+      },
+
+      {
+        "subject": "Geographical Information System",
+        "branch": "IT",
+        "semester": 8,
+        "objectId": "4F085E9E-4D24-BA6B-FF44-A20277E75C00"
+      },
+
+      {
+        "subject": "Enterprise Resource Planning",
+        "branch": "IT",
+        "semester": 8,
+        "objectId": "15179909-CDD5-9D83-FFD3-C0A846FDD700"
+      },
+
+      {
+        "subject": "Wireless Sensor Neteworks ",
+        "branch": "IT",
+        "semester": 8,
+        "objectId": "CC92C4C0-DEAD-6980-FF6F-D704689A5E00"
+      },
+
+      {
+        "subject": "Computer Simulation & Modeling",
+        "branch": "IT",
+        "semester": 8,
+        "objectId": "376651AB-6C41-C015-FF4F-715A4B1DAF00"
+      },
+
+      {
+        "subject": "Storage Network Management & Rerival ",
+        "branch": "IT",
+        "semester": 8,
+        "objectId": "BDD55515-1AD2-71F3-FF55-731F574E8800"
+      },
+
+      {
+        "subject": "Big Data Analytics ",
+        "branch": "IT",
+        "semester": 8,
+        "objectId": "12BB4470-AEDC-388C-FF18-2C9D3D194600"
+      },
+
+      {
+        "subject": "Ubiquitous Computing",
+        "branch": "IT",
+        "semester": 7,
+        "objectId": "50C4542F-DA6E-060B-FF4D-8D2B45D9A900"
+      },
+
+      {
+        "subject": "Usability Engineering",
+        "branch": "IT",
+        "semester": 7,
+        "objectId": "D576F263-E096-CAC3-FF0C-2029DD6F5F00"
+      },
+
+      {
+        "subject": "Multimedia Systems ",
+        "branch": "IT",
+        "semester": 7,
+        "objectId": "70FDEEA8-216C-2B19-FF19-A0626BAD1200"
+      },
+
+      {
+        "subject": "Software Architecture ",
+        "branch": "IT",
+        "semester": 7,
+        "objectId": "EED0C75A-2592-83A3-FF8D-50F570667B00"
+      },
+
+      {
+        "subject": "E-Commerce & E- Business",
+        "branch": "IT",
+        "semester": 7,
+        "objectId": "910A8F3A-5504-D6DB-FF1D-58FD8149AF00"
+      },
+
+      {
+        "subject": "Image Processing",
+        "branch": "IT",
+        "semester": 7,
+        "objectId": "0BF6F97F-1F57-7D49-FFD5-E43433AE6100"
+      },
+
+      {
+        "subject": "Wireless Technology",
+        "branch": "IT",
+        "semester": 7,
+        "objectId": "9CB85E9F-7341-1156-FFD4-5B6538A61F00"
+      },
+
+      {
+        "subject": "Intelligent System ",
+        "branch": "IT",
+        "semester": 7,
+        "objectId": "8F15CCB4-E778-3B1F-FF93-0A2F5FD98500"
+      },
+
+      {
+        "subject": "Cloud Computing ",
+        "branch": "IT",
+        "semester": 7,
+        "objectId": "8BE108F8-F5C6-71A2-FFBF-1D6132805800"
+      },
+
+      {
+        "subject": "Software Project Management",
+        "branch": "IT",
+        "semester": 7,
+        "objectId": "EB4FF9BB-E7D0-2DB5-FF2E-ECDF3916B200"
+      },
+
+      {
+        "subject": "ADVANCE INTERNATE TECHNOLOGY",
+        "branch": "IT",
+        "semester": 6,
+        "objectId": "56691581-89E1-225D-FF6A-78F7976D3B00"
+      },
+
+      {
+        "subject": "DISTRIBUTED SYSTEMS",
+        "branch": "IT",
+        "semester": 6,
+        "objectId": "D97916DF-3A88-7C77-FFD1-CE96B879FA00"
+      },
+
+      {
+        "subject": "DATA MINING AND BUSINESS INTELLINGENCE",
+        "branch": "IT",
+        "semester": 6,
+        "objectId": "4F801C9D-1A82-982E-FFF1-36D3BEBF6500"
+      },
+
+      {
+        "subject": "SYSTEM AND WEB SECURITY ",
+        "branch": "IT",
+        "semester": 6,
+        "objectId": "DA45AD48-E645-225B-FFD3-3994B9481800"
+      },
+
+      {
+        "subject": "SOFTWARE ENGINEERING ",
+        "branch": "IT",
+        "semester": 6,
+        "objectId": "A877281D-CA11-C1D7-FFEC-9711733A8F00"
+      },
+
+      {
+        "subject": "OPEN SOURCE TECHNOLOGIES ",
+        "branch": "IT",
+        "semester": 5,
+        "objectId": "468083D8-0212-0AEC-FFF3-856200209800"
+      },
+
+      {
+        "subject": "MICROCONTROLLER AND EMBEDED SYSTEMS",
+        "branch": "IT",
+        "semester": 5,
+        "objectId": "2172D559-E2BB-2C27-FF46-872321288000"
+      },
+
+      {
+        "subject": "ADVANCED DATABASE MANAGEMENT SYSTEMS ",
+        "branch": "IT",
+        "semester": 5,
+        "objectId": "A92D9E03-432F-CB6A-FFF4-D6FDF1691000"
+      },
+
+      {
+        "subject": "COMPUTER GRAPHICS AND VIRTUAL REALITY ",
+        "branch": "IT",
+        "semester": 5,
+        "objectId": "B05DD847-46E0-282C-FFE9-9A0C94110300"
+      },
+
+      {
+        "subject": "OPERATING SYSTEMS ",
+        "branch": "IT",
+        "semester": 5,
+        "objectId": "427B7B36-80D1-21DA-FF37-25D20701D900"
+      },
+
+      {
+        "subject": "WEB PROGRAMMING ",
+        "branch": "IT",
+        "semester": 4,
+        "objectId": "5DAD4D2E-0F29-A158-FFD8-E97344743E00"
+      },
+
+      {
+        "subject": "INFORMATION THEORY AND CODING",
+        "branch": "IT",
+        "semester": 4,
+        "objectId": "D4A6041E-62B6-12BF-FFBF-950579D09C00"
+      },
+
+      {
+        "subject": "COMPUTER ORGANIZATION AND ARCHITECTURE ",
+        "branch": "IT",
+        "semester": 4,
+        "objectId": "4432890C-427B-D457-FF5F-B3E82501E400"
+      },
+
+      {
+        "subject": "AUTOMATA THEORY ",
+        "branch": "IT",
+        "semester": 4,
+        "objectId": "0447ED3A-74B4-CF27-FF8C-5E4E834E1B00"
+      },
+
+      {
+        "subject": "COMPUTER NETWORKS ",
+        "branch": "IT",
+        "semester": 4,
+        "objectId": "6545E1C0-8317-DD8E-FFE4-60CC5AC95800"
+      },
+
+      {
+        "subject": "APPLIED MATHEMATICS4",
+        "branch": "IT",
+        "semester": 4,
+        "objectId": "BFF5DE2B-7F44-813C-FF2A-A27448AF1000"
+      },
+
+      {
+        "subject": "PRINCIPELS OF ANALOG AND DIGITAL CIRCUITS",
+        "branch": "IT",
+        "semester": 3,
+        "objectId": "AEEA65C6-012D-FF63-FF89-4AB9DA7C9300"
+      },
+
+      {
+        "subject": "GUI & DATA BASE MANAGEMENT",
+        "branch": "IT",
+        "semester": 3,
+        "objectId": "F5A6589C-2EAF-D92C-FF21-B8FBF68E5300"
+      },
+
+      {
+        "subject": "ANALOG AND DIGITAL CIRCUITS",
+        "branch": "IT",
+        "semester": 3,
+        "objectId": "14F1420E-27DB-E4EB-FF25-111DD298FB00"
+      },
+
+      {
+        "subject": "OBJECT ORIENTED PROGRAMMING AND METHODOLOGY",
+        "branch": "IT",
+        "semester": 3,
+        "objectId": "A46D523F-9431-9A54-FFF2-F780C6494600"
+      },
+
+      {
+        "subject": "DATA STRUCTURE & ALGORITHUMS",
+        "branch": "IT",
+        "semester": 3,
+        "objectId": "DA93AC14-CA37-AA0A-FFF7-E7294E972300"
+      },
+
+      {
+        "subject": "APPLIED MATHEMATICS3",
+        "branch": "IT",
+        "semester": 3,
+        "objectId": "684C64D5-4627-3253-FF31-2363E80EF500"
+      },
+
+      {
+        "subject": "Internet & Voice Communication",
+        "branch": "EXTC",
+        "semester": 8,
+        "objectId": "E96AEB03-FB46-59F4-FFC6-017CB0CC1E00"
+      },
+
+      {
+        "subject": "Ultra Wideband Communication",
+        "branch": "EXTC",
+        "semester": 8,
+        "objectId": "04DEEFDC-76B1-39F5-FF94-10FDDE705C00"
+      },
+
+      {
+        "subject": "Satellite Communication & Networks",
+        "branch": "EXTC",
+        "semester": 8,
+        "objectId": "4D379021-21A9-D81E-FFEB-C8FF07514000"
+      },
+
+      {
+        "subject": "Microwave Integrated Circuits",
+        "branch": "EXTC",
+        "semester": 8,
+        "objectId": "0CA036F8-1098-3D27-FF6F-9C424A6D7B00"
+      },
+
+      {
+        "subject": "Telecom Network Management",
+        "branch": "EXTC",
+        "semester": 8,
+        "objectId": "EACBC1AA-207F-4C2E-FFAA-F995E91D8C00"
+      },
+
+      {
+        "subject": "Wireless Networks",
+        "branch": "EXTC",
+        "semester": 8,
+        "objectId": "5F9F2AF8-B695-DC2B-FF3A-64FA52245E00"
+      },
+
+      {
+        "subject": "Speech Processing",
+        "branch": "EXTC",
+        "semester": 8,
+        "objectId": "FD87AE7E-DD88-C8B8-FFA5-F44D4DB90900"
+      },
+
+      {
+        "subject": "Analog & Mixed Signal VLSI",
+        "branch": "EXTC",
+        "semester": 7,
+        "objectId": "BA00BF27-8654-B42B-FF52-8A479B341900"
+      },
+
+      {
+        "subject": "Statistical Signal Processing",
+        "branch": "EXTC",
+        "semester": 7,
+        "objectId": "B9EB63FB-668F-D7CC-FF97-BD5146A64500"
+      },
+
+      {
+        "subject": "Neural Network & Fuzzy Logic",
+        "branch": "EXTC",
+        "semester": 7,
+        "objectId": "59DE5664-2519-3527-FF88-86DE7D08E100"
+      },
+
+      {
+        "subject": "Data Compression & Encryption",
+        "branch": "EXTC",
+        "semester": 7,
+        "objectId": "D1B1047A-D12B-247B-FF69-3ABB8ADAF400"
+      },
+
+      {
+        "subject": "Microwave & Radar Engineering",
+        "branch": "EXTC",
+        "semester": 7,
+        "objectId": "CB46431B-92C5-D29C-FF6E-084BD09D4400"
+      },
+
+      {
+        "subject": "Optical Communication and Networks",
+        "branch": "EXTC",
+        "semester": 7,
+        "objectId": "B2E3AD28-52DA-97C4-FF3E-DDDC82F71700"
+      },
+
+      {
+        "subject": "Mobile Communication",
+        "branch": "EXTC",
+        "semester": 7,
+        "objectId": "4BE911C1-636D-2CD1-FFE4-C7C23839E500"
+      },
+
+      {
+        "subject": "Image & Video Processing",
+        "branch": "EXTC",
+        "semester": 7,
+        "objectId": "1F90DDB4-F25F-A38D-FF36-E401046BFC00"
+      },
+
+      {
+        "subject": "VLSI DESIGN",
+        "branch": "EXTC",
+        "semester": 6,
+        "objectId": "237D2880-8E54-ECCC-FFC6-EFBBE6B6D400"
+      },
+
+      {
+        "subject": "OPERATING SYSTEMS",
+        "branch": "EXTC",
+        "semester": 6,
+        "objectId": "8ABB2E39-1E30-578A-FF56-28841D667A00"
+      },
+
+      {
+        "subject": "TELEVISION ENGINEERING",
+        "branch": "EXTC",
+        "semester": 6,
+        "objectId": "0BCAD64E-9616-C068-FF64-CEED8D00EA00"
+      },
+
+      {
+        "subject": "COMPUTER COMMUNICATION AND TELECOM NETWORKS",
+        "branch": "EXTC",
+        "semester": 6,
+        "objectId": "CEA87B11-5336-3EEC-FF8B-0F521B968C00"
+      },
+
+      {
+        "subject": "DISTRICT TIME SIGNAL PROCESSING",
+        "branch": "EXTC",
+        "semester": 6,
+        "objectId": "2E6D9AA7-535E-EEB1-FFCB-C049171A2B00"
+      },
+
+      {
+        "subject": "DIGITAL COMMUNICATION",
+        "branch": "EXTC",
+        "semester": 6,
+        "objectId": "83C63385-0488-776F-FF4D-64BA207DDE00"
+      },
+
+      {
+        "subject": "INTEGRATED CIRCUITS",
+        "branch": "EXTC",
+        "semester": 5,
+        "objectId": "627BD3AB-AC6F-F7E1-FFA1-4FB8AC8F5500"
+      },
+
+      {
+        "subject": "ANALOG COMMUNNICATIONS",
+        "branch": "EXTC",
+        "semester": 5,
+        "objectId": "39BBA207-CF06-CC39-FFB9-6DC20E005200"
+      },
+
+      {
+        "subject": "R F MODELING AND ANTENNAS",
+        "branch": "EXTC",
+        "semester": 5,
+        "objectId": "3497713E-0C52-47AB-FFC0-B74484447900"
+      },
+
+      {
+        "subject": "MICROCONTROLLERS AND APPLICATIONS",
+        "branch": "EXTC",
+        "semester": 5,
+        "objectId": "6B8DFD10-B2DA-0D52-FFB8-CE2BA3BB5900"
+      },
+
+      {
+        "subject": "RANDOM SIGNAL ANALYSIS",
+        "branch": "EXTC",
+        "semester": 5,
+        "objectId": "2D1119EF-C35D-2FC5-FFCC-6C91995E5000"
+      },
+
+      {
+        "subject": "CONTROL SYSTEMS",
+        "branch": "EXTC",
+        "semester": 4,
+        "objectId": "0203C189-DBDE-7546-FFC4-19553AAD9400"
+      },
+
+      {
+        "subject": "SIGNALS AND SYSTEMS",
+        "branch": "EXTC",
+        "semester": 4,
+        "objectId": "9433070C-46D9-210C-FF83-08D66ABF3300"
+      },
+
+      {
+        "subject": "WAVE THEORY AND PROPAGATION",
+        "branch": "EXTC",
+        "semester": 4,
+        "objectId": "08C28B69-3287-901A-FF1F-8AFDB2F34500"
+      },
+
+      {
+        "subject": "MICROPROCESSORES AND PERIPHERALS",
+        "branch": "EXTC",
+        "semester": 4,
+        "objectId": "3EFF66DF-BEFE-99F6-FF12-911356BAAF00"
+      },
+
+      {
+        "subject": "APPLIED MATHEMATICS - IV",
+        "branch": "EXTC",
+        "semester": 4,
+        "objectId": "B6221485-6950-594A-FFF2-3BD9266A6400"
+      },
+
+      {
+        "subject": "ANALOG ELECTRONICS - II",
+        "branch": "EXTC",
+        "semester": 4,
+        "objectId": "EE2BB6B6-5446-C9A9-FF1E-0FD1AEE5F900"
+      },
+
+      {
+        "subject": "ELECTRONIC INSTRUMENTS & MESUREMENTS",
+        "branch": "EXTC",
+        "semester": 3,
+        "objectId": "90D9C7BE-BE98-91EE-FFDD-924127582F00"
+      },
+
+      {
+        "subject": "CIRCUITS AND TRANSMISSION LINES",
+        "branch": "EXTC",
+        "semester": 3,
+        "objectId": "E1B3CD4F-BA10-1812-FFD7-F97D21FDF900"
+      },
+
+      {
+        "subject": "DIGITAL ELECTRONICS",
+        "branch": "EXTC",
+        "semester": 3,
+        "objectId": "A431D092-F3FA-25C1-FFD7-FF282F301200"
+      },
+
+      {
+        "subject": "APPLIED MATHEMATICS-III",
+        "branch": "EXTC",
+        "semester": 3,
+        "objectId": "8BC6DE71-A38B-237B-FF86-3E54324FFA00"
+      },
+
+      {
+        "subject": "ANALOG ELECTRONICS - I",
+        "branch": "EXTC",
+        "semester": 3,
+        "objectId": "9A2D43D5-E5E3-3AE3-FF5C-3CFE4B54DB00"
+      },
+
+      {
+        "subject": "Parallel and Distributed Systems",
+        "branch": "COMPS",
+        "semester": 8,
+        "objectId": "AC485E8C-6B77-007B-FFA8-CA276DE4B100"
+      },
+
+      {
+        "subject": "Data Warerhouse and Mining",
+        "branch": "COMPS",
+        "semester": 8,
+        "objectId": "1DD6B272-7054-3E66-FFB0-DCFC4756D700"
+      },
+
+      {
+        "subject": "Human Machine Interaction",
+        "branch": "COMPS",
+        "semester": 8,
+        "objectId": "20CFB66D-2EF7-8DFE-FF35-7902B4A71100"
+      },
+
+      {
+        "subject": "Big Data Analytics",
+        "branch": "COMPS",
+        "semester": 8,
+        "objectId": "3FE3E11F-6855-55C9-FFAA-C27D6771D600"
+      },
+
+      {
+        "subject": "Adhoc Wireless Networks",
+        "branch": "COMPS",
+        "semester": 8,
+        "objectId": "B727D88F-7F9A-FF3E-FFB2-C19498837100"
+      },
+
+      {
+        "subject": "Digital Forensic",
+        "branch": "COMPS",
+        "semester": 8,
+        "objectId": "9707F829-F71F-02AE-FF2F-89426A6C0100"
+      },
+
+      {
+        "subject": "Embedde Systems",
+        "branch": "COMPS",
+        "semester": 8,
+        "objectId": "5EB02FAF-DB19-DC3F-FFA6-D32823D8E100"
+      },
+
+      {
+        "subject": "Machine Learning",
+        "branch": "COMPS",
+        "semester": 8,
+        "objectId": "08107CAB-0CF5-DD3D-FFCB-810FB5ED1500"
+      },
+
+      {
+        "subject": "ERP and Supply Chain Management",
+        "branch": "COMPS",
+        "semester": 7,
+        "objectId": "145C7F36-1D75-1442-FFFF-27299CD7DE00"
+      },
+
+      {
+        "subject": "Soft Computing",
+        "branch": "COMPS",
+        "semester": 7,
+        "objectId": "984521FB-6EE8-B0E9-FF78-7DB3EC266B00"
+      },
+
+      {
+        "subject": "Software Architecture",
+        "branch": "COMPS",
+        "semester": 7,
+        "objectId": "FE4857BB-66EB-B4E2-FF4E-326B679CC600"
+      },
+
+      {
+        "subject": "Image Processing",
+        "branch": "COMPS",
+        "semester": 7,
+        "objectId": "6212F634-8596-28B6-FF00-5FF4D2361E00"
+      },
+
+      {
+        "subject": "Computer Simulation and Modeling",
+        "branch": "COMPS",
+        "semester": 7,
+        "objectId": "4E778731-49EE-7DBC-FF6F-E82952112300"
+      },
+
+      {
+        "subject": "Advance Algorithms",
+        "branch": "COMPS",
+        "semester": 7,
+        "objectId": "814CE905-4162-3F31-FF2D-79644E24CB00"
+      },
+
+      {
+        "subject": "Artificial Intelligence",
+        "branch": "COMPS",
+        "semester": 7,
+        "objectId": "17D06F8C-A523-2348-FF4C-AA96C36A2500"
+      },
+
+      {
+        "subject": "Digital Signal Processing",
+        "branch": "COMPS",
+        "semester": 7,
+        "objectId": "528B8E67-D705-8654-FFAE-1D11B14DFA00"
+      },
+
+      {
+        "subject": "Cryptography and System Security",
+        "branch": "COMPS",
+        "semester": 7,
+        "objectId": "5AA08362-00DB-5B49-FF50-D7BFA00BB400"
+      },
+
+      {
+        "subject": "MOBILE COMMUNICATION AND COMPUTING",
+        "branch": "COMPS",
+        "semester": 6,
+        "objectId": "047A364B-43E9-8A73-FFC1-C97037633700"
+      },
+
+      {
+        "subject": "DISTRIBUTED DATABASES",
+        "branch": "COMPS",
+        "semester": 6,
+        "objectId": "3793630B-6760-5D0C-FFB5-9F8F64FCDA00"
+      },
+
+      {
+        "subject": "SOFTWARE ENGINEERING",
+        "branch": "COMPS",
+        "semester": 6,
+        "objectId": "E9298180-4FCD-DB8A-FFF1-DF331CD7CB00"
+      },
+
+      {
+        "subject": "SYSTEM PROGRAMMING AND COMPILER CONSTRUCTION",
+        "branch": "COMPS",
+        "semester": 6,
+        "objectId": "3CBD275F-A9DC-191F-FF3A-43798EF8F300"
+      },
+
+      {
+        "subject": "STRUCTURED AND OBJECT ORIENTED ANALYSIS & DESIGN",
+        "branch": "COMPS",
+        "semester": 5,
+        "objectId": "C143AA6B-C54D-2461-FF35-26712919BD00"
+      },
+
+      {
+        "subject": "COMPUTER NETWORKS",
+        "branch": "COMPS",
+        "semester": 5,
+        "objectId": "32FCD152-9EF5-A138-FF66-1A16C4745A00"
+      },
+
+      {
+        "subject": "MICROPROCESSOR",
+        "branch": "COMPS",
+        "semester": 5,
+        "objectId": "25FC3DB4-78A5-8FA3-FF13-7BFDE9417500"
+      },
+
+      {
+        "subject": "OPERATING SYSTEMS",
+        "branch": "COMPS",
+        "semester": 5,
+        "objectId": "6C192417-51D9-A702-FFED-5A4698AD8100"
+      },
+
+      {
+        "subject": "COMPUTER GRAPHICS",
+        "branch": "COMPS",
+        "semester": 4,
+        "objectId": "AA3D3845-7F93-AACC-FF71-130B580CA300"
+      },
+
+      {
+        "subject": "THEORETICAL COMPUTER SCIENCE",
+        "branch": "COMPS",
+        "semester": 4,
+        "objectId": "58E40374-88D7-6292-FF96-0C9F015D9500"
+      },
+
+      {
+        "subject": "DATABASE MANAGEMENT SYSTEMS",
+        "branch": "COMPS",
+        "semester": 4,
+        "objectId": "AC3362A6-8D6F-2A9E-FFA0-8D4B47EDE200"
+      },
+
+      {
+        "subject": "ANALYSIS OF ALGORITHM",
+        "branch": "COMPS",
+        "semester": 4,
+        "objectId": "8F9756B6-1560-54AE-FF12-212AE7869C00"
+      },
+
+      {
+        "subject": "COMPUTER ORGANIZATIN AND ARCHIECTURE",
+        "branch": "COMPS",
+        "semester": 4,
+        "objectId": "B7D5ED09-86C4-0857-FF74-694EFA1BDF00"
+      },
+
+      {
+        "subject": "APPLIED MATHEMATICS - IV",
+        "branch": "COMPS",
+        "semester": 4,
+        "objectId": "53AB345D-825A-1583-FF80-2BB0EB95BF00"
+      },
+
+      {
+        "subject": "OBJECT ORIENTAED PROGRAMMING METHODOLOGY",
+        "branch": "COMPS",
+        "semester": 3,
+        "objectId": "58CEA60E-F730-3477-FF5C-FB6756B72E00"
+      },
+
+      {
+        "subject": "DIGITAL LOGIC DESIGN AND ANALYSIS",
+        "branch": "COMPS",
+        "semester": 3,
+        "objectId": "0ED66587-B551-71C6-FF37-C82DF7A37300"
+      },
+
+      {
+        "subject": "DISCRETE STRUCTURE",
+        "branch": "COMPS",
+        "semester": 3,
+        "objectId": "64BAA34D-0F77-74F9-FF8D-4D71DE252700"
+      },
+
+      {
+        "subject": "DATA STRUCTURES",
+        "branch": "COMPS",
+        "semester": 3,
+        "objectId": "B011EA27-B68A-FC5E-FFDA-A7F5C718F700"
+      },
+
+      {
+        "subject": "APPLIED MATHEMATICS-III",
+        "branch": "COMPS",
+        "semester": 3,
+        "objectId": "610FEF20-2A08-DAF6-FF8D-6CA403866A00"
+      },
+
+      {
+        "subject": "ELECTRONIC CIRCUITS AND COMMUNATION FUNDAMENTALS",
+        "branch": "COMPS",
+        "semester": 3,
+        "objectId": "8F848DB6-434A-BEEC-FF66-77B99D435000"
+      },
+
+      {
+        "subject": "DIGITAL CONTROL SYSTEM",
+        "branch": "ETRX",
+        "semester": 8,
+        "objectId": "83539318-2D9B-6C41-FF0A-A15559B7DD00"
+      },
+
+      {
+        "subject": "ROBOTICS",
+        "branch": "ETRX",
+        "semester": 8,
+        "objectId": "1ED5C35C-6A3C-F763-FF0F-CFE8BF13CA00"
+      },
+
+      {
+        "subject": "MOBILE COMMUNICATION",
+        "branch": "ETRX",
+        "semester": 8,
+        "objectId": "597E6804-8CE8-45DB-FF70-22A3E6815500"
+      },
+
+      {
+        "subject": "ADVANCE NETWORKING TECHNOLOGIES",
+        "branch": "ETRX",
+        "semester": 8,
+        "objectId": "9570A964-EB49-7963-FFFB-49033F9AE400"
+      },
+
+      {
+        "subject": "MEMS TECHNOLOGY",
+        "branch": "ETRX",
+        "semester": 8,
+        "objectId": "05DADACB-28CF-7904-FF50-624B7166E500"
+      },
+
+      {
+        "subject": "CMOS VLSI DESIGN",
+        "branch": "ETRX",
+        "semester": 8,
+        "objectId": "FD833DA5-624E-2CF3-FF12-43318F532A00"
+      },
+
+      {
+        "subject": "OPTICAL FIBER COMMUNICATION",
+        "branch": "ETRX",
+        "semester": 7,
+        "objectId": "0F538CBB-B72C-ACAE-FF1F-35327269A300"
+      },
+
+      {
+        "subject": "ASIC VERIFICATION",
+        "branch": "ETRX",
+        "semester": 7,
+        "objectId": "6DAEE011-2170-DFF0-FFEE-62BCD3398400"
+      },
+
+      {
+        "subject": "ARTIFICIAL INTELLIGANCE",
+        "branch": "ETRX",
+        "semester": 7,
+        "objectId": "53D05EAB-8A44-5FF3-FF98-8043700CD300"
+      },
+
+      {
+        "subject": "COMPUTER COMMUINICATION NETWORKS",
+        "branch": "ETRX",
+        "semester": 7,
+        "objectId": "BC6F1103-5ED8-D5BE-FF83-BDBF7E780B00"
+      },
+
+      {
+        "subject": "DIGITAL IMAGE PROCESSING",
+        "branch": "ETRX",
+        "semester": 7,
+        "objectId": "95DD6E34-A440-AAAB-FFCC-0D27C10E3900"
+      },
+
+      {
+        "subject": "POWER ELECTRONICS2",
+        "branch": "ETRX",
+        "semester": 7,
+        "objectId": "7840B43C-1E6E-994A-FF8E-2EBEAB699E00"
+      },
+
+      {
+        "subject": "IC TECHNOLOGY",
+        "branch": "ETRX",
+        "semester": 7,
+        "objectId": "2B27DCD5-09CA-9056-FF66-BC9224AD5400"
+      },
+
+      {
+        "subject": "EMBEDDED SYSTEM DESIGN",
+        "branch": "ETRX",
+        "semester": 7,
+        "objectId": "5DD63CBD-DA46-EA70-FF2F-3B9D9DA44800"
+      },
+
+      {
+        "subject": "MODERN INFORMATION TECHNOLOGY FOR MANAGEMENT",
+        "branch": "ETRX",
+        "semester": 6,
+        "objectId": "F1C4D1D9-395C-A717-FF5F-CE126BE9BE00"
+      },
+
+      {
+        "subject": "DIGITAL SIGNAL PROCESSING AND PROCESSORS",
+        "branch": "ETRX",
+        "semester": 6,
+        "objectId": "3F8DC7C9-9A25-7CEC-FFFE-1410CA1C2D00"
+      },
+
+      {
+        "subject": "POWER ELECTRONICS1",
+        "branch": "ETRX",
+        "semester": 6,
+        "objectId": "FAA14F70-BD92-FBEA-FF88-51799FA0FE00"
+      },
+
+      {
+        "subject": "COMPUTER ORGANIZATION",
+        "branch": "ETRX",
+        "semester": 6,
+        "objectId": "5688BDB8-977E-1F04-FF4C-C2DB3E43DB00"
+      },
+
+      {
+        "subject": "ADVANCE INSTRUMENTAION SYSTEM",
+        "branch": "ETRX",
+        "semester": 6,
+        "objectId": "3DA5F8B6-79F8-3203-FF2F-E66C0D500F00"
+      },
+
+      {
+        "subject": "BASIC VLSI DESIGN",
+        "branch": "ETRX",
+        "semester": 6,
+        "objectId": "3CCE8B2E-C527-D0B0-FF53-5DB197F20F00"
+      },
+
+      {
+        "subject": "DIGITAL COMMUNICATION",
+        "branch": "ETRX",
+        "semester": 5,
+        "objectId": "78599AA5-B277-6BEB-FF7F-17796C355800"
+      },
+
+      {
+        "subject": "SIGNALS AND SYSTEMS",
+        "branch": "ETRX",
+        "semester": 5,
+        "objectId": "3D37CF50-5061-3111-FF91-6F9846A15400"
+      },
+
+      {
+        "subject": "ELECTROMAGNETIC ENGINEERING",
+        "branch": "ETRX",
+        "semester": 5,
+        "objectId": "8E981448-D7E4-772C-FFF8-9C73672EBB00"
+      },
+
+      {
+        "subject": "MICROCONTROLLERS AND APPLICATION",
+        "branch": "ETRX",
+        "semester": 5,
+        "objectId": "83D36FB7-D009-94F5-FF1A-156D8B161400"
+      },
+
+      {
+        "subject": "DESIGN LINEAR INTEGRATED CIRCUITS",
+        "branch": "ETRX",
+        "semester": 5,
+        "objectId": "D3B7E6DD-9D16-C574-FFE0-5F3DE17C5100"
+      },
+
+      {
+        "subject": "COMMUNICATION SKILLS",
+        "branch": "ETRX",
+        "semester": 4,
+        "objectId": "9A18558D-1047-0EF5-FFA0-87438C702800"
+      },
+
+      {
+        "subject": "ELECTRICAL MACHINES",
+        "branch": "ETRX",
+        "semester": 4,
+        "objectId": "38D23F0A-EE72-E983-FF3E-6AC43E8DB800"
+      },
+
+      {
+        "subject": "MICROPROCESSORS AND PERIPHERALS",
+        "branch": "ETRX",
+        "semester": 4,
+        "objectId": "F589DA11-8F6E-71B1-FF5A-D63621CC1D00"
+      },
+
+      {
+        "subject": "FUNDAMENTAL OF COMMUNICATION ENGINEERING",
+        "branch": "ETRX",
+        "semester": 4,
+        "objectId": "6E943B69-DE1D-CFE2-FF7E-1A62B19D4D00"
+      },
+
+      {
+        "subject": "BIOMEDICAL ELECTRONICS",
+        "branch": "ETRX",
+        "semester": 8,
+        "objectId": "A50DF45A-3D78-3C0E-FFF2-3DD2C9C5E500"
+      },
+
+      {
+        "subject": "PRINCIPELS OF CONTROL SYSTEMS",
+        "branch": "ETRX",
+        "semester": 4,
+        "objectId": "4E166C23-F429-E347-FFB2-D0E2ADBCE600"
+      },
+
+      {
+        "subject": "APPLIED MATHEMATICS4",
+        "branch": "ETRX",
+        "semester": 4,
+        "objectId": "CC6E9B64-B70A-5259-FF35-80591F1ABA00"
+      },
+
+      {
+        "subject": "DISCRETE ELECTRONICS CIRCUIT",
+        "branch": "ETRX",
+        "semester": 4,
+        "objectId": "8FAE6054-C1F3-9F09-FF09-0BC174447100"
+      },
+
+      {
+        "subject": "ELECTRONIC INSTRUMENTS AND MEASUREMENT",
+        "branch": "ETRX",
+        "semester": 3,
+        "objectId": "535D8EF6-801C-53A4-FFEB-DF34C6C97B00"
+      },
+
+      {
+        "subject": "CIRCUIT THEORY",
+        "branch": "ETRX",
+        "semester": 3,
+        "objectId": "6ECC3936-728F-6322-FF05-0A47A9BC1500"
+      },
+
+      {
+        "subject": "DIGITAL CIRCUITS AND DESIGN",
+        "branch": "ETRX",
+        "semester": 3,
+        "objectId": "28143CA3-C78D-CAB0-FF5E-E7344DFC0D00"
+      },
+
+      {
+        "subject": "ELECTRONICS DEVICES",
+        "branch": "ETRX",
+        "semester": 3,
+        "objectId": "FDCEE62E-38C5-0BC6-FFF5-703C32320700"
+      },
+
+      {
+        "subject": "APPLIED MATHEMATICS3",
+        "branch": "ETRX",
+        "semester": 3,
+        "objectId": "88062505-C6ED-00E6-FFFA-A58F06629D00"
+      }
+    ];
+
+
+
+var counter = 0;
+    $(document).ready(function() {
+              //  for (var i=0;i<data1.length; i++){
+              //  }
+       console.log("saving image");   
+       save_image(0);
+
+
+    });
+
+    function save_image(obj) {
+        $('body').append(obj);
+        branch = data1[obj].branch;
+        console.log(branch);
+        semester = data1[obj].semester;
+        console.log(semester);
+
+         if ((semester==4 || semester==6 || semester==8 )
+            &&( branch == "CIVIL" 
+                || branch == "COMPS"
+                || branch == "ELEC"
+                || branch == "ETRX"
+                || branch == "EXTC"
+                || branch == "INSTRU"
+                || branch == "IT"
+                || branch == "MECH"))  {
+// || branch == "CIVIL" || branch == "COMPS"|| branch == "ELEC"|| branch == "ETRX"|| branch == "EXTC"|| branch == "INSTRU"|| branch == "IT"|| branch == "MECH")&&( semester = 1|| semester = 3|| semester = 5|| semester = 7) && (semester != 3 && branch != "INSTRU")
+            $('#i').attr("src", "mockups/Techmax/" + branch + "_s"+semester + ".jpg");
+            console.log("mockups/Techmax/" + branch + "_s"+semester + ".jpg");
+
+            var img = document.getElementById("i");
+
+            img.onload = function() {
+
+                var c = document.getElementById("c");
+                var ctx = c.getContext("2d");
+                var img = document.getElementById("i");
+                var maxWidth = 380;
+                var lineHeight = 20;
+                var text = data1[obj].subject;
+                //       var x = (c.width - maxWidth) / 2;
+                var x = (c.width / 2)+10;
+                var y = 260;
+                ctx.drawImage(img, 0, 0);
+                ctx.fillStyle = "#ffffff";
+                wrapText(ctx, text, x, y, maxWidth, lineHeight);
+
+                ctx.font = "10px sans-serif";
+//                ctx.fillText(data1[obj].semester, 540, 180); // semester
+
+                //       ctx.fillText(data1[obj].subject,100,270) ;  // branch
+
+
+
+                // var image = c.toDataURL("image/jpeg").replace("image/jpeg","image/octet-stream");
+                var image = c.toDataURL("image/jpeg");
+
+                counter ++;
+                $.ajax({
+                    url: "save_img.php",
+                    type: "post",
+                    async: "false",
+                    data: {
+                        "link": image,
+                        "no": "_"+branch+"_s"+semester+"_"+counter
+                    },
+                    success: function(data) {
+                                     if(obj<488){
+                                        save_image(obj+1);
+                                     }
+
+                        console.log(data);
+                    },
+                    complete: function() {
+                        console.log("Ready");
+                    },
+                    error: function(data) {
+                        console.log(data);
+                    }
+                });
+
+            }
+        }else{
+          if(obj<489){
+             save_image(obj+1);
+          }
+        }
+        //obj++;
+        //
+    }
+
+    function wrapText(context, text, x, y, maxWidth, lineHeight) {
+        var words = text.split(' ');
+        var line = '';
+
+        context.textAlign = "center";
+        context.font = "bold 20px sans-serif";
+        context.fillStyle = "red"
+        context.shadowColor="white";
+        context.shadowOffsetX = 2;
+        context.shadowOffsetY = 2;
+        for (var n = 0; n < words.length; n++) {
+            var testLine = line + words[n] + ' ';
+            var metrics = context.measureText(testLine);
+            var testWidth = metrics.width;
+            if (testWidth > maxWidth && n > 0) {
+                context.fillText(line, x, y);
+                line = words[n] + ' ';
+                y += lineHeight;
+            } else {
+                line = testLine;
+            }
+        }
+        context.fillText(line, x, y);
+    }
+
+</script>
